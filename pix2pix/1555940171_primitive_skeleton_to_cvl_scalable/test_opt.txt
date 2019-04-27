@@ -1,9 +1,10 @@
 ----------------- Options ---------------
+                add_noise: False                         
              aspect_ratio: 1.0                           
                batch_size: 1                             
-          checkpoints_dir: ./checkpoints                 
+          checkpoints_dir: /home/martin/work/thesis/repo/src/pipeline/../../results/pix2pix	[default: ./checkpoints]
                 crop_size: 256                           
-                 dataroot: ../datasets/online_skeletons/pix2pix/	[default: None]
+                 dataroot:                               	[default: None]
              dataset_mode: aligned                       
                 direction: AtoB                          
           display_winsize: 256                           
@@ -19,20 +20,20 @@
          max_dataset_size: inf                           
                     model: pix2pix                       	[default: test]
                n_layers_D: 3                             
-                     name: 1555940171_primitive_skeleton_to_cvl_2048	[default: experiment_name]
+                     name: 1555940171_primitive_skeleton_to_cvl_scalable	[default: experiment_name]
                       ndf: 64                            
                      netD: basic                         
                      netG: unet_256                      
                       ngf: 64                            
                no_dropout: False                         
-                  no_flip: True                          	[default: False]
+                  no_flip: False                         
                      norm: batch                         
                     ntest: inf                           
-                 num_test: 100000000                     	[default: 50]
+                 num_test: 50                            
               num_threads: 4                             
                 output_nc: 3                             
                     phase: test                          
-               preprocess: none                          	[default: resize_and_crop]
+               preprocess: resize_and_crop               
               results_dir: ./results/                    
            serial_batches: False                         
                    suffix:                               
