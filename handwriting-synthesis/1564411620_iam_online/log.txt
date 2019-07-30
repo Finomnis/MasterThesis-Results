@@ -1,0 +1,1181 @@
+/cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+
+new run with parameters:
+{'attention_mixture_components': 10,
+ 'batch_size': 32,
+ 'batch_sizes': [32, 64, 64],
+ 'beta1_decay': 0.9,
+ 'beta1_decays': [0.9, 0.9, 0.9],
+ 'checkpoint_dir': 'checkpoints/1564411620_iam_online',
+ 'early_stopping_steps': 1500,
+ 'enable_parameter_averaging': False,
+ 'grad_clip': 10,
+ 'keep_prob_scalar': 1.0,
+ 'learning_rate': 0.0001,
+ 'learning_rates': [0.0001, 5e-05, 2e-05],
+ 'log_dir': 'logs',
+ 'log_interval': 20,
+ 'logging_level': 20,
+ 'loss_averaging_window': 100,
+ 'lstm_size': 400,
+ 'min_steps_to_checkpoint': 2000,
+ 'num_restarts': 2,
+ 'num_training_steps': 100000,
+ 'optimizer': 'rms',
+ 'output_mixture_components': 20,
+ 'output_units': 121,
+ 'patiences': [1500, 1000, 500],
+ 'prediction_dir': 'predictions/1564411620_iam_online',
+ 'reader': <__main__.DataReader object at 0x7fcd188bef98>,
+ 'regularization_constant': 0.0,
+ 'restart_idx': 0,
+ 'validation_batch_size': 32,
+ 'warm_start_init_step': 0}
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From rnn.py:196: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From rnn.py:196: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/ops/rnn.py:626: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:80: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:80: LSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:140: MultivariateNormalFullCovariance.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_full_covariance) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:140: MultivariateNormalFullCovariance.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_full_covariance) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_full_covariance.py:195: MultivariateNormalTriL.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_tril) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_full_covariance.py:195: MultivariateNormalTriL.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_tril) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_tril.py:222: MultivariateNormalLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_tril.py:222: MultivariateNormalLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.mvn_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:199: Normal.__init__ (from tensorflow.python.ops.distributions.normal) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:199: Normal.__init__ (from tensorflow.python.ops.distributions.normal) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/ops/distributions/normal.py:160: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/ops/distributions/normal.py:160: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:201: AffineLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.bijectors.affine_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:201: AffineLinearOperator.__init__ (from tensorflow.contrib.distributions.python.ops.bijectors.affine_linear_operator) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/bijectors/affine_linear_operator.py:158: _DistributionShape.__init__ (from tensorflow.contrib.distributions.python.ops.shape) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/bijectors/affine_linear_operator.py:158: _DistributionShape.__init__ (from tensorflow.contrib.distributions.python.ops.shape) is deprecated and will be removed after 2018-10-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.contrib.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:205: TransformedDistribution.__init__ (from tensorflow.python.ops.distributions.transformed_distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/contrib/distributions/python/ops/mvn_linear_operator.py:205: TransformedDistribution.__init__ (from tensorflow.python.ops.distributions.transformed_distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:141: Bernoulli.__init__ (from tensorflow.python.ops.distributions.bernoulli) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:141: Bernoulli.__init__ (from tensorflow.python.ops.distributions.bernoulli) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:142: Categorical.__init__ (from tensorflow.python.ops.distributions.categorical) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/rnn_cell.py:142: Categorical.__init__ (from tensorflow.python.ops.distributions.categorical) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/ops/distributions/categorical.py:278: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.random.categorical instead.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/ops/distributions/categorical.py:278: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.random.categorical instead.
+all parameters:
+[('Variable:0', []),
+ ('Variable_1:0', []),
+ ('Variable_2:0', []),
+ ('rnn/LSTMAttentionCell/lstm_cell/kernel:0', [476, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell/bias:0', [1600]),
+ ('rnn/LSTMAttentionCell/attention/weights:0', [476, 30]),
+ ('rnn/LSTMAttentionCell/attention/biases:0', [30]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/kernel:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/bias:0', [1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/kernel:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/bias:0', [1600]),
+ ('rnn/gmm/weights:0', [400, 121]),
+ ('rnn/gmm/biases:0', [121]),
+ ('rnn/LSTMAttentionCell/lstm_cell/kernel/RMSProp:0', [476, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell/kernel/RMSProp_1:0', [476, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell/bias/RMSProp:0', [1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell/bias/RMSProp_1:0', [1600]),
+ ('rnn/LSTMAttentionCell/attention/weights/RMSProp:0', [476, 30]),
+ ('rnn/LSTMAttentionCell/attention/weights/RMSProp_1:0', [476, 30]),
+ ('rnn/LSTMAttentionCell/attention/biases/RMSProp:0', [30]),
+ ('rnn/LSTMAttentionCell/attention/biases/RMSProp_1:0', [30]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/kernel/RMSProp:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/kernel/RMSProp_1:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/bias/RMSProp:0', [1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/bias/RMSProp_1:0', [1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/kernel/RMSProp:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/kernel/RMSProp_1:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/bias/RMSProp:0', [1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/bias/RMSProp_1:0', [1600]),
+ ('rnn/gmm/weights/RMSProp:0', [400, 121]),
+ ('rnn/gmm/weights/RMSProp_1:0', [400, 121]),
+ ('rnn/gmm/biases/RMSProp:0', [121]),
+ ('rnn/gmm/biases/RMSProp_1:0', [121])]
+trainable parameters:
+[('rnn/LSTMAttentionCell/lstm_cell/kernel:0', [476, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell/bias:0', [1600]),
+ ('rnn/LSTMAttentionCell/attention/weights:0', [476, 30]),
+ ('rnn/LSTMAttentionCell/attention/biases:0', [30]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/kernel:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_1/bias:0', [1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/kernel:0', [876, 1600]),
+ ('rnn/LSTMAttentionCell/lstm_cell_2/bias:0', [1600]),
+ ('rnn/gmm/weights:0', [400, 121]),
+ ('rnn/gmm/biases:0', [121])]
+trainable parameter count:
+3632431
+2019-07-29 16:47:14.060010: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-07-29 16:47:14.381408: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x40f4cf0 executing computations on platform CUDA. Devices:
+2019-07-29 16:47:14.381456: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
+2019-07-29 16:47:14.404518: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100110000 Hz
+2019-07-29 16:47:14.407525: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x45dda30 executing computations on platform Host. Devices:
+2019-07-29 16:47:14.407574: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-07-29 16:47:14.407937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.6705
+pciBusID: 0000:83:00.0
+totalMemory: 10.92GiB freeMemory: 10.77GiB
+2019-07-29 16:47:14.407977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-07-29 16:47:14.414296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-07-29 16:47:14.414338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-07-29 16:47:14.414351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-07-29 16:47:14.414580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10479 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:83:00.0, compute capability: 6.1)
+built graph
+2019-07-29 16:47:16.432527: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+[[step        0]]     [[train 5.8932s]]     loss: 3.72668457       [[val 1.551s]]     loss: 3.74945617       
+[[step       20]]     [[train 3.7523s]]     loss: 3.71191367       [[val 0.9266s]]     loss: 3.71217771       
+[[step       40]]     [[train 3.7512s]]     loss: 3.62796054       [[val 0.9388s]]     loss: 3.63193157       
+[[step       60]]     [[train 3.7092s]]     loss: 3.53242156       [[val 0.9323s]]     loss: 3.53734939       
+[[step       80]]     [[train 3.7111s]]     loss: 3.41937609       [[val 0.9282s]]     loss: 3.42220477       
+[[step      100]]     [[train 3.6963s]]     loss: 3.30799411       [[val 0.9162s]]     loss: 3.30757952       
+[[step      120]]     [[train 3.6887s]]     loss: 3.11605731       [[val 0.926s]]     loss: 3.11802455       
+[[step      140]]     [[train 3.6481s]]     loss: 2.91911696       [[val 0.917s]]     loss: 2.92097711       
+[[step      160]]     [[train 3.6545s]]     loss: 2.66650213       [[val 0.9224s]]     loss: 2.66941019       
+[[step      180]]     [[train 3.6381s]]     loss: 2.31354692       [[val 0.9247s]]     loss: 2.31794543       
+[[step      200]]     [[train 3.6167s]]     loss: 1.85565365       [[val 0.9203s]]     loss: 1.8666378        
+[[step      220]]     [[train 3.613s]]     loss: 1.33722926       [[val 0.9143s]]     loss: 1.34399599       
+[[step      240]]     [[train 3.6311s]]     loss: 0.80201468       [[val 0.9205s]]     loss: 0.80305911       
+[[step      260]]     [[train 3.6128s]]     loss: 0.32686138       [[val 0.9274s]]     loss: 0.32327419       
+[[step      280]]     [[train 3.6038s]]     loss: -0.02310119      [[val 0.9207s]]     loss: -0.03306442      
+[[step      300]]     [[train 3.6167s]]     loss: -0.23580894      [[val 0.928s]]     loss: -0.25357184      
+[[step      320]]     [[train 3.6001s]]     loss: -0.39154794      [[val 0.9297s]]     loss: -0.41209747      
+[[step      340]]     [[train 3.5953s]]     loss: -0.49737325      [[val 0.9195s]]     loss: -0.51137375      
+[[step      360]]     [[train 3.5508s]]     loss: -0.58599813      [[val 0.8993s]]     loss: -0.59620743      
+[[step      380]]     [[train 3.5303s]]     loss: -0.64406636      [[val 0.8968s]]     loss: -0.65077446      
+[[step      400]]     [[train 3.488s]]     loss: -0.71131146      [[val 0.9001s]]     loss: -0.71630787      
+[[step      420]]     [[train 3.4498s]]     loss: -0.74642432      [[val 0.8943s]]     loss: -0.75150948      
+[[step      440]]     [[train 3.4171s]]     loss: -0.78184404      [[val 0.8853s]]     loss: -0.78947693      
+[[step      460]]     [[train 3.4331s]]     loss: -0.80429239      [[val 0.8919s]]     loss: -0.81703936      
+[[step      480]]     [[train 3.4668s]]     loss: -0.82843245      [[val 0.8967s]]     loss: -0.84105285      
+[[step      500]]     [[train 3.4787s]]     loss: -0.84495655      [[val 0.8897s]]     loss: -0.85436343      
+[[step      520]]     [[train 3.6169s]]     loss: -0.86555894      [[val 0.9113s]]     loss: -0.87493601      
+[[step      540]]     [[train 3.6767s]]     loss: -0.88435975      [[val 0.9284s]]     loss: -0.89230839      
+[[step      560]]     [[train 3.7389s]]     loss: -0.89631871      [[val 0.9438s]]     loss: -0.90695937      
+[[step      580]]     [[train 3.7941s]]     loss: -0.91521727      [[val 0.9516s]]     loss: -0.92670962      
+[[step      600]]     [[train 3.8004s]]     loss: -0.93192626      [[val 0.9572s]]     loss: -0.94244795      
+[[step      620]]     [[train 3.7448s]]     loss: -0.94671078      [[val 0.9482s]]     loss: -0.9537924       
+[[step      640]]     [[train 3.7705s]]     loss: -0.96039301      [[val 0.9548s]]     loss: -0.97141397      
+[[step      660]]     [[train 3.7688s]]     loss: -0.96814097      [[val 0.943s]]     loss: -0.97998416      
+[[step      680]]     [[train 3.7639s]]     loss: -0.9782185       [[val 0.9571s]]     loss: -0.98713557      
+[[step      700]]     [[train 3.8229s]]     loss: -0.9915294       [[val 0.9621s]]     loss: -1.00152642      
+[[step      720]]     [[train 3.8258s]]     loss: -1.00099441      [[val 0.9584s]]     loss: -1.01308055      
+[[step      740]]     [[train 3.8336s]]     loss: -1.01275142      [[val 0.9641s]]     loss: -1.02662467      
+[[step      760]]     [[train 3.8358s]]     loss: -1.03581118      [[val 0.9604s]]     loss: -1.0392995       
+[[step      780]]     [[train 3.842s]]     loss: -1.04886741      [[val 0.9607s]]     loss: -1.05856138      
+[[step      800]]     [[train 3.859s]]     loss: -1.05360363      [[val 0.9539s]]     loss: -1.0691533       
+[[step      820]]     [[train 3.8919s]]     loss: -1.06713903      [[val 0.9623s]]     loss: -1.08590647      
+[[step      840]]     [[train 3.8992s]]     loss: -1.08075057      [[val 0.9667s]]     loss: -1.092031        
+[[step      860]]     [[train 3.8811s]]     loss: -1.09862097      [[val 0.9616s]]     loss: -1.10920569      
+[[step      880]]     [[train 3.8791s]]     loss: -1.1192611       [[val 0.9573s]]     loss: -1.12231367      
+[[step      900]]     [[train 3.8874s]]     loss: -1.13796773      [[val 0.9723s]]     loss: -1.13520806      
+[[step      920]]     [[train 3.8352s]]     loss: -1.15040519      [[val 0.9677s]]     loss: -1.14625926      
+[[step      940]]     [[train 3.8202s]]     loss: -1.16556994      [[val 0.9513s]]     loss: -1.1629103       
+[[step      960]]     [[train 3.8123s]]     loss: -1.17403176      [[val 0.9592s]]     loss: -1.17562569      
+[[step      980]]     [[train 3.8217s]]     loss: -1.18489501      [[val 0.9596s]]     loss: -1.185118        
+[[step     1000]]     [[train 3.7996s]]     loss: -1.19803057      [[val 0.9562s]]     loss: -1.20146508      
+[[step     1020]]     [[train 3.8145s]]     loss: -1.21591958      [[val 0.958s]]     loss: -1.2170647       
+[[step     1040]]     [[train 3.8471s]]     loss: -1.22618058      [[val 0.9642s]]     loss: -1.22669192      
+[[step     1060]]     [[train 3.8978s]]     loss: -1.23674954      [[val 0.9742s]]     loss: -1.23791387      
+[[step     1080]]     [[train 3.8372s]]     loss: -1.25187108      [[val 0.9631s]]     loss: -1.25288972      
+[[step     1100]]     [[train 3.8388s]]     loss: -1.26098393      [[val 0.9601s]]     loss: -1.26317276      
+[[step     1120]]     [[train 3.8354s]]     loss: -1.26603854      [[val 0.957s]]     loss: -1.26949954      
+[[step     1140]]     [[train 3.7663s]]     loss: -1.28040614      [[val 0.9522s]]     loss: -1.282526        
+[[step     1160]]     [[train 3.7215s]]     loss: -1.29371026      [[val 0.9471s]]     loss: -1.29863024      
+[[step     1180]]     [[train 3.7422s]]     loss: -1.30001979      [[val 0.9451s]]     loss: -1.31010273      
+[[step     1200]]     [[train 3.7235s]]     loss: -1.31579518      [[val 0.9449s]]     loss: -1.32298812      
+[[step     1220]]     [[train 3.6995s]]     loss: -1.33709303      [[val 0.9374s]]     loss: -1.34292234      
+[[step     1240]]     [[train 3.7604s]]     loss: -1.35460109      [[val 0.9619s]]     loss: -1.36201365      
+[[step     1260]]     [[train 3.8004s]]     loss: -1.36751024      [[val 0.9555s]]     loss: -1.37163178      
+[[step     1280]]     [[train 3.8055s]]     loss: -1.38070197      [[val 0.9539s]]     loss: -1.38686173      
+[[step     1300]]     [[train 3.8748s]]     loss: -1.39322404      [[val 0.961s]]     loss: -1.40114795      
+[[step     1320]]     [[train 3.8831s]]     loss: -1.40925453      [[val 0.9684s]]     loss: -1.42007502      
+[[step     1340]]     [[train 3.8392s]]     loss: -1.42499576      [[val 0.9424s]]     loss: -1.43263008      
+[[step     1360]]     [[train 3.8099s]]     loss: -1.44227119      [[val 0.9472s]]     loss: -1.44889514      
+[[step     1380]]     [[train 3.7884s]]     loss: -1.46733797      [[val 0.9466s]]     loss: -1.46948748      
+[[step     1400]]     [[train 3.7014s]]     loss: -1.48660424      [[val 0.9486s]]     loss: -1.49096805      
+[[step     1420]]     [[train 3.6283s]]     loss: -1.50255562      [[val 0.929s]]     loss: -1.50025533      
+[[step     1440]]     [[train 3.6007s]]     loss: -1.51271715      [[val 0.9138s]]     loss: -1.51803778      
+[[step     1460]]     [[train 3.5302s]]     loss: -1.52796323      [[val 0.9026s]]     loss: -1.53573444      
+[[step     1480]]     [[train 3.503s]]     loss: -1.5386792       [[val 0.9045s]]     loss: -1.54573059      
+[[step     1500]]     [[train 3.4138s]]     loss: -1.54959417      [[val 0.8868s]]     loss: -1.55200876      
+[[step     1520]]     [[train 3.4597s]]     loss: -1.55877507      [[val 0.8974s]]     loss: -1.55973052      
+[[step     1540]]     [[train 3.3782s]]     loss: -1.57163863      [[val 0.8989s]]     loss: -1.57006081      
+[[step     1560]]     [[train 3.4133s]]     loss: -1.57964295      [[val 0.9113s]]     loss: -1.5800295       
+[[step     1580]]     [[train 3.3757s]]     loss: -1.58838588      [[val 0.9046s]]     loss: -1.59128881      
+[[step     1600]]     [[train 3.4338s]]     loss: -1.60255109      [[val 0.8985s]]     loss: -1.60397983      
+[[step     1620]]     [[train 3.3992s]]     loss: -1.61988462      [[val 0.9054s]]     loss: -1.61893946      
+[[step     1640]]     [[train 3.4277s]]     loss: -1.63069742      [[val 0.9131s]]     loss: -1.62722235      
+[[step     1660]]     [[train 3.4336s]]     loss: -1.63893385      [[val 0.9128s]]     loss: -1.63473564      
+[[step     1680]]     [[train 3.4734s]]     loss: -1.64653479      [[val 0.9121s]]     loss: -1.64078272      
+[[step     1700]]     [[train 3.4612s]]     loss: -1.64711453      [[val 0.9207s]]     loss: -1.64478186      
+[[step     1720]]     [[train 3.4908s]]     loss: -1.65145634      [[val 0.9139s]]     loss: -1.6566257       
+[[step     1740]]     [[train 3.5125s]]     loss: -1.65494778      [[val 0.9239s]]     loss: -1.66282992      
+[[step     1760]]     [[train 3.5188s]]     loss: -1.66719195      [[val 0.9144s]]     loss: -1.67113788      
+[[step     1780]]     [[train 3.5006s]]     loss: -1.67114027      [[val 0.9174s]]     loss: -1.67842542      
+[[step     1800]]     [[train 3.5153s]]     loss: -1.68384903      [[val 0.9151s]]     loss: -1.68773407      
+[[step     1820]]     [[train 3.5232s]]     loss: -1.67234534      [[val 0.9205s]]     loss: -1.67692368      
+[[step     1840]]     [[train 3.5041s]]     loss: -1.66603375      [[val 0.9174s]]     loss: -1.66883303      
+[[step     1860]]     [[train 3.5055s]]     loss: -1.66772145      [[val 0.9177s]]     loss: -1.67493488      
+[[step     1880]]     [[train 3.4894s]]     loss: -1.68014439      [[val 0.9142s]]     loss: -1.68043474      
+[[step     1900]]     [[train 3.4463s]]     loss: -1.68209312      [[val 0.9162s]]     loss: -1.68726879      
+[[step     1920]]     [[train 3.4395s]]     loss: -1.70806029      [[val 0.8998s]]     loss: -1.70556085      
+[[step     1940]]     [[train 3.4731s]]     loss: -1.72855893      [[val 0.8944s]]     loss: -1.72648433      
+[[step     1960]]     [[train 3.4189s]]     loss: -1.73984255      [[val 0.8886s]]     loss: -1.73621971      
+[[step     1980]]     [[train 3.4416s]]     loss: -1.74511137      [[val 0.8975s]]     loss: -1.74446455      
+[[step     2000]]     [[train 3.4436s]]     loss: -1.75707585      [[val 0.897s]]     loss: -1.75526042      
+[[step     2020]]     [[train 3.477s]]     loss: -1.76125437      [[val 0.9142s]]     loss: -1.76242536      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2040]]     [[train 3.4652s]]     loss: -1.7716406       [[val 0.9143s]]     loss: -1.77606522      
+saving model to checkpoints/1564411620_iam_online/model
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+[[step     2060]]     [[train 3.5054s]]     loss: -1.7619574       [[val 0.922s]]     loss: -1.7659056       
+[[step     2080]]     [[train 3.5342s]]     loss: -1.7561676       [[val 0.9204s]]     loss: -1.76281632      
+[[step     2100]]     [[train 3.5383s]]     loss: -1.75129818      [[val 0.9168s]]     loss: -1.75607777      
+[[step     2120]]     [[train 3.5593s]]     loss: -1.75787249      [[val 0.9158s]]     loss: -1.76195411      
+[[step     2140]]     [[train 3.5456s]]     loss: -1.76621811      [[val 0.9077s]]     loss: -1.7646972       
+[[step     2160]]     [[train 3.5694s]]     loss: -1.78687681      [[val 0.9109s]]     loss: -1.78448927      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2180]]     [[train 3.5615s]]     loss: -1.79836848      [[val 0.9139s]]     loss: -1.79736022      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2200]]     [[train 3.5863s]]     loss: -1.80946659      [[val 0.9021s]]     loss: -1.81065192      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2220]]     [[train 3.5735s]]     loss: -1.81203922      [[val 0.9145s]]     loss: -1.81711727      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2240]]     [[train 3.6349s]]     loss: -1.8112273       [[val 0.9246s]]     loss: -1.82163597      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2260]]     [[train 3.6377s]]     loss: -1.81658504      [[val 0.9193s]]     loss: -1.8257697       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2280]]     [[train 3.6591s]]     loss: -1.83392116      [[val 0.9264s]]     loss: -1.83368261      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2300]]     [[train 3.6678s]]     loss: -1.84305962      [[val 0.938s]]     loss: -1.8423944       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2320]]     [[train 3.7001s]]     loss: -1.85473659      [[val 0.9257s]]     loss: -1.84668037      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2340]]     [[train 3.6697s]]     loss: -1.85852955      [[val 0.9312s]]     loss: -1.85433475      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2360]]     [[train 3.6852s]]     loss: -1.86109259      [[val 0.9441s]]     loss: -1.85995354      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2380]]     [[train 3.6969s]]     loss: -1.85841312      [[val 0.9302s]]     loss: -1.86411296      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2400]]     [[train 3.6571s]]     loss: -1.86110455      [[val 0.9355s]]     loss: -1.86747239      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2420]]     [[train 3.5854s]]     loss: -1.8567557       [[val 0.9305s]]     loss: -1.86950639      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2440]]     [[train 3.5486s]]     loss: -1.86122743      [[val 0.9108s]]     loss: -1.87007459      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2460]]     [[train 3.5681s]]     loss: -1.8673763       [[val 0.9185s]]     loss: -1.87360044      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2480]]     [[train 3.5045s]]     loss: -1.87933308      [[val 0.9214s]]     loss: -1.88023418      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2500]]     [[train 3.6013s]]     loss: -1.89026814      [[val 0.9222s]]     loss: -1.8855458       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2520]]     [[train 3.6193s]]     loss: -1.89751796      [[val 0.9182s]]     loss: -1.89297498      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2540]]     [[train 3.6783s]]     loss: -1.90180072      [[val 0.94s]]     loss: -1.89585895      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2560]]     [[train 3.641s]]     loss: -1.90945493      [[val 0.9251s]]     loss: -1.90052139      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2580]]     [[train 3.6747s]]     loss: -1.90771964      [[val 0.9338s]]     loss: -1.9059179       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2600]]     [[train 3.6735s]]     loss: -1.91186966      [[val 0.9379s]]     loss: -1.91328957      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2620]]     [[train 3.6405s]]     loss: -1.92113384      [[val 0.946s]]     loss: -1.91648175      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2640]]     [[train 3.6711s]]     loss: -1.9328512       [[val 0.9452s]]     loss: -1.92627116      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2660]]     [[train 3.7146s]]     loss: -1.93506231      [[val 0.938s]]     loss: -1.93167881      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2680]]     [[train 3.7332s]]     loss: -1.93913037      [[val 0.9308s]]     loss: -1.93639548      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2700]]     [[train 3.6994s]]     loss: -1.9436418       [[val 0.937s]]     loss: -1.93915951      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2720]]     [[train 3.7415s]]     loss: -1.94733834      [[val 0.9456s]]     loss: -1.94361373      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2740]]     [[train 3.7251s]]     loss: -1.94773477      [[val 0.9485s]]     loss: -1.94593173      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2760]]     [[train 3.7378s]]     loss: -1.94563307      [[val 0.9575s]]     loss: -1.94687689      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2780]]     [[train 3.7297s]]     loss: -1.94565281      [[val 0.9664s]]     loss: -1.94607525      
+[[step     2800]]     [[train 3.7106s]]     loss: -1.94032033      [[val 0.9513s]]     loss: -1.94365811      
+[[step     2820]]     [[train 3.755s]]     loss: -1.94364353      [[val 0.9451s]]     loss: -1.94898082      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2840]]     [[train 3.8329s]]     loss: -1.94473294      [[val 0.9543s]]     loss: -1.95165641      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2860]]     [[train 3.8568s]]     loss: -1.95425704      [[val 0.9663s]]     loss: -1.95501938      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2880]]     [[train 3.8895s]]     loss: -1.96008314      [[val 0.9723s]]     loss: -1.95591758      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2900]]     [[train 3.9619s]]     loss: -1.96988685      [[val 0.9802s]]     loss: -1.96309876      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2920]]     [[train 3.9227s]]     loss: -1.97128983      [[val 0.982s]]     loss: -1.96417561      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2940]]     [[train 3.8498s]]     loss: -1.98451511      [[val 0.9694s]]     loss: -1.96712357      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2960]]     [[train 3.8294s]]     loss: -1.98852304      [[val 0.9546s]]     loss: -1.97446592      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     2980]]     [[train 3.8614s]]     loss: -1.9892329       [[val 0.9541s]]     loss: -1.98251566      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3000]]     [[train 3.8529s]]     loss: -1.99342851      [[val 0.9584s]]     loss: -1.98319416      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3020]]     [[train 3.8519s]]     loss: -1.99653772      [[val 0.9461s]]     loss: -1.98521537      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3040]]     [[train 3.8699s]]     loss: -1.98627555      [[val 0.9433s]]     loss: -1.98482931      
+[[step     3060]]     [[train 3.8427s]]     loss: -1.98895198      [[val 0.9495s]]     loss: -1.98921556      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3080]]     [[train 3.8091s]]     loss: -1.9940832       [[val 0.9434s]]     loss: -1.99048755      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3100]]     [[train 3.8064s]]     loss: -1.99332817      [[val 0.9411s]]     loss: -1.99599891      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3120]]     [[train 3.8164s]]     loss: -1.99372165      [[val 0.9466s]]     loss: -1.99906225      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3140]]     [[train 3.8038s]]     loss: -2.00473058      [[val 0.9549s]]     loss: -2.00421608      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3160]]     [[train 3.7765s]]     loss: -2.00564322      [[val 0.9539s]]     loss: -2.0053287       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3180]]     [[train 3.7655s]]     loss: -2.00546807      [[val 0.9418s]]     loss: -2.01034403      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3200]]     [[train 3.7242s]]     loss: -2.01102462      [[val 0.9349s]]     loss: -2.0110246       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3220]]     [[train 3.7366s]]     loss: -2.01055535      [[val 0.939s]]     loss: -2.01099617      
+[[step     3240]]     [[train 3.7532s]]     loss: -2.01107262      [[val 0.9303s]]     loss: -2.01180714      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3260]]     [[train 3.7423s]]     loss: -2.01122795      [[val 0.9257s]]     loss: -2.00879903      
+[[step     3280]]     [[train 3.7357s]]     loss: -2.01757771      [[val 0.9253s]]     loss: -2.01021465      
+[[step     3300]]     [[train 3.7679s]]     loss: -2.01519392      [[val 0.9302s]]     loss: -2.01647964      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3320]]     [[train 3.7832s]]     loss: -2.01973115      [[val 0.9401s]]     loss: -2.0198051       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3340]]     [[train 3.7578s]]     loss: -2.02523037      [[val 0.9387s]]     loss: -2.02505192      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3360]]     [[train 3.7908s]]     loss: -2.03587294      [[val 0.9575s]]     loss: -2.03144074      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3380]]     [[train 3.7999s]]     loss: -2.043662        [[val 0.9608s]]     loss: -2.03659265      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3400]]     [[train 3.7681s]]     loss: -2.05285586      [[val 0.9604s]]     loss: -2.03428948      
+[[step     3420]]     [[train 3.7577s]]     loss: -2.05318117      [[val 0.9514s]]     loss: -2.04050181      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3440]]     [[train 3.7418s]]     loss: -2.04986146      [[val 0.9545s]]     loss: -2.04229977      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3460]]     [[train 3.7378s]]     loss: -2.04660256      [[val 0.9377s]]     loss: -2.04382877      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3480]]     [[train 3.7946s]]     loss: -2.03700513      [[val 0.9425s]]     loss: -2.03531452      
+[[step     3500]]     [[train 3.834s]]     loss: -2.03243457      [[val 0.9316s]]     loss: -2.03433452      
+[[step     3520]]     [[train 3.8353s]]     loss: -2.0379627       [[val 0.9419s]]     loss: -2.03287169      
+[[step     3540]]     [[train 3.8469s]]     loss: -2.0313338       [[val 0.934s]]     loss: -2.02350572      
+[[step     3560]]     [[train 3.8481s]]     loss: -2.03478354      [[val 0.934s]]     loss: -2.01910409      
+[[step     3580]]     [[train 3.8017s]]     loss: -2.04388092      [[val 0.9397s]]     loss: -2.02851811      
+[[step     3600]]     [[train 3.7575s]]     loss: -2.04407778      [[val 0.9468s]]     loss: -2.03421432      
+[[step     3620]]     [[train 3.7811s]]     loss: -2.04712563      [[val 0.9375s]]     loss: -2.03958843      
+[[step     3640]]     [[train 3.8214s]]     loss: -2.05471199      [[val 0.9522s]]     loss: -2.05041771      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3660]]     [[train 3.7963s]]     loss: -2.05364673      [[val 0.953s]]     loss: -2.05975651      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3680]]     [[train 3.7636s]]     loss: -2.05267611      [[val 0.9402s]]     loss: -2.0573759       
+[[step     3700]]     [[train 3.7521s]]     loss: -2.05745993      [[val 0.9273s]]     loss: -2.06110966      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3720]]     [[train 3.6495s]]     loss: -2.05649909      [[val 0.9169s]]     loss: -2.0565558       
+[[step     3740]]     [[train 3.5526s]]     loss: -2.05045534      [[val 0.8907s]]     loss: -2.04295004      
+[[step     3760]]     [[train 3.5765s]]     loss: -2.05199662      [[val 0.8843s]]     loss: -2.04152336      
+[[step     3780]]     [[train 3.5665s]]     loss: -2.05932484      [[val 0.8799s]]     loss: -2.04541801      
+[[step     3800]]     [[train 3.533s]]     loss: -2.05981367      [[val 0.8776s]]     loss: -2.04991687      
+[[step     3820]]     [[train 3.56s]]     loss: -2.07082782      [[val 0.8837s]]     loss: -2.05675148      
+[[step     3840]]     [[train 3.5425s]]     loss: -2.08756985      [[val 0.8918s]]     loss: -2.07554511      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3860]]     [[train 3.5152s]]     loss: -2.09225322      [[val 0.8949s]]     loss: -2.07851124      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3880]]     [[train 3.4711s]]     loss: -2.0908038       [[val 0.8925s]]     loss: -2.08039201      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3900]]     [[train 3.5045s]]     loss: -2.09781506      [[val 0.89s]]     loss: -2.07972225      
+[[step     3920]]     [[train 3.4921s]]     loss: -2.09666466      [[val 0.8794s]]     loss: -2.08151552      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3940]]     [[train 3.5289s]]     loss: -2.09471928      [[val 0.8943s]]     loss: -2.08535036      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3960]]     [[train 3.4928s]]     loss: -2.09574701      [[val 0.8855s]]     loss: -2.08544794      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     3980]]     [[train 3.5014s]]     loss: -2.09916915      [[val 0.8976s]]     loss: -2.09022256      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4000]]     [[train 3.4941s]]     loss: -2.1018682       [[val 0.9156s]]     loss: -2.08916249      
+[[step     4020]]     [[train 3.5037s]]     loss: -2.09392568      [[val 0.9247s]]     loss: -2.08984438      
+[[step     4040]]     [[train 3.5083s]]     loss: -2.0951569       [[val 0.9234s]]     loss: -2.08850132      
+[[step     4060]]     [[train 3.5285s]]     loss: -2.09545884      [[val 0.9293s]]     loss: -2.09037084      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4080]]     [[train 3.601s]]     loss: -2.09671196      [[val 0.928s]]     loss: -2.0918461       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4100]]     [[train 3.588s]]     loss: -2.09265028      [[val 0.9218s]]     loss: -2.0972427       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4120]]     [[train 3.6473s]]     loss: -2.10354829      [[val 0.9348s]]     loss: -2.09914051      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4140]]     [[train 3.6391s]]     loss: -2.1069594       [[val 0.9283s]]     loss: -2.10330186      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4160]]     [[train 3.6499s]]     loss: -2.11233886      [[val 0.9286s]]     loss: -2.11049068      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4180]]     [[train 3.6113s]]     loss: -2.110611        [[val 0.9281s]]     loss: -2.10717164      
+[[step     4200]]     [[train 3.6021s]]     loss: -2.12196963      [[val 0.9197s]]     loss: -2.10851197      
+[[step     4220]]     [[train 3.5725s]]     loss: -2.12219956      [[val 0.9058s]]     loss: -2.11000362      
+[[step     4240]]     [[train 3.5361s]]     loss: -2.12401982      [[val 0.8988s]]     loss: -2.10501558      
+[[step     4260]]     [[train 3.5155s]]     loss: -2.125899        [[val 0.9065s]]     loss: -2.10226605      
+[[step     4280]]     [[train 3.5239s]]     loss: -2.12903077      [[val 0.9037s]]     loss: -2.10587645      
+[[step     4300]]     [[train 3.5714s]]     loss: -2.12754604      [[val 0.9129s]]     loss: -2.10611362      
+[[step     4320]]     [[train 3.6049s]]     loss: -2.12927403      [[val 0.9229s]]     loss: -2.11005454      
+[[step     4340]]     [[train 3.6661s]]     loss: -2.12630955      [[val 0.9375s]]     loss: -2.11396407      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4360]]     [[train 3.6558s]]     loss: -2.12458042      [[val 0.9247s]]     loss: -2.11898499      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4380]]     [[train 3.653s]]     loss: -2.13000302      [[val 0.9304s]]     loss: -2.12055811      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4400]]     [[train 3.6403s]]     loss: -2.12385912      [[val 0.9304s]]     loss: -2.11773095      
+[[step     4420]]     [[train 3.6284s]]     loss: -2.12567991      [[val 0.9372s]]     loss: -2.11704725      
+[[step     4440]]     [[train 3.611s]]     loss: -2.12793417      [[val 0.9292s]]     loss: -2.12111538      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4460]]     [[train 3.6495s]]     loss: -2.13359389      [[val 0.941s]]     loss: -2.11850116      
+[[step     4480]]     [[train 3.665s]]     loss: -2.13373675      [[val 0.9391s]]     loss: -2.11760433      
+[[step     4500]]     [[train 3.6403s]]     loss: -2.13377066      [[val 0.9363s]]     loss: -2.11915666      
+[[step     4520]]     [[train 3.6474s]]     loss: -2.13460462      [[val 0.9198s]]     loss: -2.11986967      
+[[step     4540]]     [[train 3.6098s]]     loss: -2.1433651       [[val 0.915s]]     loss: -2.12211451      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4560]]     [[train 3.6046s]]     loss: -2.13479018      [[val 0.9158s]]     loss: -2.12164139      
+[[step     4580]]     [[train 3.5672s]]     loss: -2.13898782      [[val 0.9133s]]     loss: -2.12756693      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4600]]     [[train 3.5654s]]     loss: -2.13929525      [[val 0.9234s]]     loss: -2.12702242      
+[[step     4620]]     [[train 3.5389s]]     loss: -2.13419069      [[val 0.9265s]]     loss: -2.12644435      
+[[step     4640]]     [[train 3.6526s]]     loss: -2.13118355      [[val 0.9338s]]     loss: -2.1263122       
+[[step     4660]]     [[train 3.684s]]     loss: -2.14221256      [[val 0.9403s]]     loss: -2.13072705      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4680]]     [[train 3.7055s]]     loss: -2.13935386      [[val 0.9395s]]     loss: -2.12767066      
+[[step     4700]]     [[train 3.7478s]]     loss: -2.14778423      [[val 0.9362s]]     loss: -2.13229312      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4720]]     [[train 3.774s]]     loss: -2.15134356      [[val 0.9327s]]     loss: -2.13609125      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4740]]     [[train 3.7273s]]     loss: -2.15792985      [[val 0.9352s]]     loss: -2.13991881      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4760]]     [[train 3.6563s]]     loss: -2.15566703      [[val 0.9201s]]     loss: -2.1394541       
+[[step     4780]]     [[train 3.6787s]]     loss: -2.16061264      [[val 0.9252s]]     loss: -2.14345242      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4800]]     [[train 3.6522s]]     loss: -2.16260461      [[val 0.9187s]]     loss: -2.14741827      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4820]]     [[train 3.658s]]     loss: -2.16786211      [[val 0.9367s]]     loss: -2.14765659      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4840]]     [[train 3.602s]]     loss: -2.16714694      [[val 0.9319s]]     loss: -2.14794782      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4860]]     [[train 3.6653s]]     loss: -2.16618567      [[val 0.9397s]]     loss: -2.15008834      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     4880]]     [[train 3.6213s]]     loss: -2.16027081      [[val 0.9336s]]     loss: -2.14976713      
+[[step     4900]]     [[train 3.6571s]]     loss: -2.15702395      [[val 0.9538s]]     loss: -2.1468918       
+[[step     4920]]     [[train 3.6484s]]     loss: -2.15296803      [[val 0.9399s]]     loss: -2.1468994       
+[[step     4940]]     [[train 3.6826s]]     loss: -2.15028322      [[val 0.9392s]]     loss: -2.1449305       
+[[step     4960]]     [[train 3.7005s]]     loss: -2.15650956      [[val 0.9395s]]     loss: -2.14802985      
+[[step     4980]]     [[train 3.7151s]]     loss: -2.16457921      [[val 0.9375s]]     loss: -2.14962451      
+[[step     5000]]     [[train 3.7636s]]     loss: -2.17119104      [[val 0.9232s]]     loss: -2.15664521      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5020]]     [[train 3.736s]]     loss: -2.17603829      [[val 0.9205s]]     loss: -2.16212514      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5040]]     [[train 3.805s]]     loss: -2.17806222      [[val 0.9218s]]     loss: -2.16314319      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5060]]     [[train 3.8082s]]     loss: -2.18608087      [[val 0.9182s]]     loss: -2.16144024      
+[[step     5080]]     [[train 3.8098s]]     loss: -2.18028165      [[val 0.9149s]]     loss: -2.16232702      
+[[step     5100]]     [[train 3.805s]]     loss: -2.18087858      [[val 0.9337s]]     loss: -2.16125507      
+[[step     5120]]     [[train 3.7522s]]     loss: -2.18770246      [[val 0.9284s]]     loss: -2.16167573      
+[[step     5140]]     [[train 3.7427s]]     loss: -2.18652608      [[val 0.9456s]]     loss: -2.16270908      
+[[step     5160]]     [[train 3.7259s]]     loss: -2.18585364      [[val 0.9401s]]     loss: -2.16475854      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5180]]     [[train 3.7279s]]     loss: -2.19177565      [[val 0.9426s]]     loss: -2.16645223      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5200]]     [[train 3.6903s]]     loss: -2.19364648      [[val 0.9231s]]     loss: -2.16843486      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5220]]     [[train 3.7468s]]     loss: -2.1929736       [[val 0.9238s]]     loss: -2.16777394      
+[[step     5240]]     [[train 3.6951s]]     loss: -2.19636994      [[val 0.9035s]]     loss: -2.1711729       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5260]]     [[train 3.6589s]]     loss: -2.18579327      [[val 0.9056s]]     loss: -2.17224375      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5280]]     [[train 3.6487s]]     loss: -2.18697876      [[val 0.9056s]]     loss: -2.17293724      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5300]]     [[train 3.6805s]]     loss: -2.17941211      [[val 0.9158s]]     loss: -2.17105757      
+[[step     5320]]     [[train 3.6744s]]     loss: -2.17743211      [[val 0.9217s]]     loss: -2.17186332      
+[[step     5340]]     [[train 3.6728s]]     loss: -2.18099267      [[val 0.914s]]     loss: -2.17060058      
+[[step     5360]]     [[train 3.6857s]]     loss: -2.18710973      [[val 0.9038s]]     loss: -2.1731158       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5380]]     [[train 3.7087s]]     loss: -2.18897053      [[val 0.8999s]]     loss: -2.17437291      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5400]]     [[train 3.6565s]]     loss: -2.19622398      [[val 0.8911s]]     loss: -2.17629578      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5420]]     [[train 3.6552s]]     loss: -2.19697109      [[val 0.8894s]]     loss: -2.17538702      
+[[step     5440]]     [[train 3.6615s]]     loss: -2.19638808      [[val 0.9031s]]     loss: -2.17474265      
+[[step     5460]]     [[train 3.6706s]]     loss: -2.19799427      [[val 0.9082s]]     loss: -2.17674387      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5480]]     [[train 3.667s]]     loss: -2.19603507      [[val 0.9164s]]     loss: -2.17546983      
+[[step     5500]]     [[train 3.6912s]]     loss: -2.19946405      [[val 0.9139s]]     loss: -2.17369815      
+[[step     5520]]     [[train 3.6696s]]     loss: -2.19867572      [[val 0.9133s]]     loss: -2.1720164       
+[[step     5540]]     [[train 3.7048s]]     loss: -2.19988408      [[val 0.9174s]]     loss: -2.17479323      
+[[step     5560]]     [[train 3.7225s]]     loss: -2.19566603      [[val 0.9216s]]     loss: -2.17213742      
+[[step     5580]]     [[train 3.7089s]]     loss: -2.20209361      [[val 0.9322s]]     loss: -2.1734163       
+[[step     5600]]     [[train 3.7075s]]     loss: -2.20331511      [[val 0.9371s]]     loss: -2.17683689      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5620]]     [[train 3.7696s]]     loss: -2.20008037      [[val 0.9321s]]     loss: -2.18531854      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5640]]     [[train 3.6981s]]     loss: -2.20284665      [[val 0.923s]]     loss: -2.1847657       
+[[step     5660]]     [[train 3.6887s]]     loss: -2.2048148       [[val 0.9323s]]     loss: -2.18704453      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5680]]     [[train 3.7472s]]     loss: -2.20015619      [[val 0.924s]]     loss: -2.18695389      
+[[step     5700]]     [[train 3.706s]]     loss: -2.1971347       [[val 0.9126s]]     loss: -2.18755235      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5720]]     [[train 3.6513s]]     loss: -2.2040399       [[val 0.922s]]     loss: -2.18431646      
+[[step     5740]]     [[train 3.6677s]]     loss: -2.20665472      [[val 0.917s]]     loss: -2.18744246      
+[[step     5760]]     [[train 3.5976s]]     loss: -2.20849498      [[val 0.906s]]     loss: -2.18688667      
+[[step     5780]]     [[train 3.4901s]]     loss: -2.21311795      [[val 0.8848s]]     loss: -2.189958        
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5800]]     [[train 3.4545s]]     loss: -2.21702345      [[val 0.8824s]]     loss: -2.19592182      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5820]]     [[train 3.3915s]]     loss: -2.22097256      [[val 0.8667s]]     loss: -2.1979426       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5840]]     [[train 3.3593s]]     loss: -2.22001529      [[val 0.859s]]     loss: -2.19576367      
+[[step     5860]]     [[train 3.3738s]]     loss: -2.22475003      [[val 0.8476s]]     loss: -2.19964878      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5880]]     [[train 3.3953s]]     loss: -2.22533128      [[val 0.846s]]     loss: -2.20306376      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     5900]]     [[train 3.3794s]]     loss: -2.22711327      [[val 0.8488s]]     loss: -2.195349        
+[[step     5920]]     [[train  3.4s]]     loss: -2.22257399      [[val 0.8471s]]     loss: -2.19629596      
+[[step     5940]]     [[train 3.4185s]]     loss: -2.21805608      [[val 0.8475s]]     loss: -2.20137691      
+[[step     5960]]     [[train 3.3954s]]     loss: -2.21666552      [[val 0.8569s]]     loss: -2.20021988      
+[[step     5980]]     [[train 3.3817s]]     loss: -2.22091295      [[val 0.866s]]     loss: -2.1987073       
+[[step     6000]]     [[train 3.4229s]]     loss: -2.21890549      [[val 0.8645s]]     loss: -2.20136581      
+[[step     6020]]     [[train 3.419s]]     loss: -2.22586229      [[val 0.861s]]     loss: -2.20218241      
+[[step     6040]]     [[train 3.4155s]]     loss: -2.22973135      [[val 0.8587s]]     loss: -2.2005262       
+[[step     6060]]     [[train 3.4496s]]     loss: -2.23501403      [[val 0.849s]]     loss: -2.20265938      
+[[step     6080]]     [[train 3.4404s]]     loss: -2.23349396      [[val 0.8533s]]     loss: -2.20291481      
+[[step     6100]]     [[train 3.3994s]]     loss: -2.23969802      [[val 0.8518s]]     loss: -2.20338939      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6120]]     [[train 3.4077s]]     loss: -2.23578007      [[val 0.8597s]]     loss: -2.20297913      
+[[step     6140]]     [[train 3.3701s]]     loss: -2.23779518      [[val 0.8646s]]     loss: -2.20487098      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6160]]     [[train 3.3346s]]     loss: -2.23723325      [[val 0.869s]]     loss: -2.20234772      
+[[step     6180]]     [[train 3.3161s]]     loss: -2.236434        [[val 0.8623s]]     loss: -2.20439911      
+[[step     6200]]     [[train 3.3034s]]     loss: -2.23666645      [[val 0.8539s]]     loss: -2.20818021      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6220]]     [[train 3.2693s]]     loss: -2.241726        [[val 0.8494s]]     loss: -2.20884072      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6240]]     [[train 3.2155s]]     loss: -2.24166518      [[val 0.8419s]]     loss: -2.20956762      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6260]]     [[train 3.2124s]]     loss: -2.23904612      [[val 0.8376s]]     loss: -2.21476357      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6280]]     [[train 3.1968s]]     loss: -2.23503809      [[val 0.8324s]]     loss: -2.20881223      
+[[step     6300]]     [[train 3.1983s]]     loss: -2.23202411      [[val 0.8351s]]     loss: -2.20939523      
+[[step     6320]]     [[train 3.2038s]]     loss: -2.23180483      [[val 0.8301s]]     loss: -2.21272561      
+[[step     6340]]     [[train 3.1977s]]     loss: -2.2296254       [[val 0.8283s]]     loss: -2.20945545      
+[[step     6360]]     [[train 3.1494s]]     loss: -2.23640606      [[val 0.8253s]]     loss: -2.21156078      
+[[step     6380]]     [[train 3.1555s]]     loss: -2.24391982      [[val 0.8221s]]     loss: -2.21576163      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6400]]     [[train 3.1568s]]     loss: -2.25022667      [[val 0.8218s]]     loss: -2.21824163      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6420]]     [[train 3.1789s]]     loss: -2.24870143      [[val 0.8265s]]     loss: -2.21806038      
+[[step     6440]]     [[train 3.2268s]]     loss: -2.25429675      [[val 0.8361s]]     loss: -2.22485434      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6460]]     [[train 3.2763s]]     loss: -2.25302013      [[val 0.8446s]]     loss: -2.21842169      
+[[step     6480]]     [[train 3.2771s]]     loss: -2.24393637      [[val 0.8551s]]     loss: -2.21343584      
+[[step     6500]]     [[train 3.2456s]]     loss: -2.23433594      [[val 0.8524s]]     loss: -2.20928686      
+[[step     6520]]     [[train 3.2387s]]     loss: -2.2355356       [[val 0.8534s]]     loss: -2.2062911       
+[[step     6540]]     [[train 3.2766s]]     loss: -2.23435171      [[val 0.8612s]]     loss: -2.20559806      
+[[step     6560]]     [[train 3.2807s]]     loss: -2.23511208      [[val 0.8603s]]     loss: -2.20871624      
+[[step     6580]]     [[train 3.2917s]]     loss: -2.24363891      [[val 0.8605s]]     loss: -2.21678669      
+[[step     6600]]     [[train 3.3195s]]     loss: -2.24450069      [[val 0.8751s]]     loss: -2.22045296      
+[[step     6620]]     [[train 3.3324s]]     loss: -2.24216149      [[val 0.8721s]]     loss: -2.2221392       
+[[step     6640]]     [[train 3.2687s]]     loss: -2.24612102      [[val 0.8546s]]     loss: -2.21989129      
+[[step     6660]]     [[train 3.2897s]]     loss: -2.2460612       [[val 0.8576s]]     loss: -2.22170041      
+[[step     6680]]     [[train 3.3278s]]     loss: -2.2479999       [[val 0.8534s]]     loss: -2.22309932      
+[[step     6700]]     [[train 3.3572s]]     loss: -2.25260888      [[val 0.8544s]]     loss: -2.2223955       
+[[step     6720]]     [[train 3.3287s]]     loss: -2.25767261      [[val 0.852s]]     loss: -2.22348313      
+[[step     6740]]     [[train 3.3313s]]     loss: -2.25802836      [[val 0.8672s]]     loss: -2.2258806       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6760]]     [[train 3.2994s]]     loss: -2.25953928      [[val 0.8557s]]     loss: -2.22642792      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6780]]     [[train 3.2818s]]     loss: -2.25677145      [[val 0.8595s]]     loss: -2.22603438      
+[[step     6800]]     [[train 3.2337s]]     loss: -2.25932282      [[val 0.8555s]]     loss: -2.22385375      
+[[step     6820]]     [[train 3.2616s]]     loss: -2.26221381      [[val 0.8598s]]     loss: -2.22318797      
+[[step     6840]]     [[train 3.2859s]]     loss: -2.2589256       [[val 0.8481s]]     loss: -2.22382336      
+[[step     6860]]     [[train 3.2677s]]     loss: -2.25590692      [[val 0.86s]]     loss: -2.22466192      
+[[step     6880]]     [[train 3.22s]]     loss: -2.2609362       [[val 0.8536s]]     loss: -2.225349        
+[[step     6900]]     [[train 3.2345s]]     loss: -2.25897422      [[val 0.85s]]     loss: -2.22575307      
+[[step     6920]]     [[train 3.1907s]]     loss: -2.26045168      [[val 0.8506s]]     loss: -2.23095476      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     6940]]     [[train 3.1812s]]     loss: -2.26317291      [[val 0.8536s]]     loss: -2.22611506      
+[[step     6960]]     [[train 3.1963s]]     loss: -2.26324157      [[val 0.851s]]     loss: -2.22806627      
+[[step     6980]]     [[train 3.2134s]]     loss: -2.26177296      [[val 0.8544s]]     loss: -2.22952034      
+[[step     7000]]     [[train 3.2372s]]     loss: -2.26137083      [[val 0.8572s]]     loss: -2.2273375       
+[[step     7020]]     [[train 3.2771s]]     loss: -2.26282799      [[val 0.8563s]]     loss: -2.22610527      
+[[step     7040]]     [[train 3.286s]]     loss: -2.26317325      [[val 0.8603s]]     loss: -2.23273836      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7060]]     [[train 3.3021s]]     loss: -2.26708092      [[val 0.8585s]]     loss: -2.22779782      
+[[step     7080]]     [[train 3.3161s]]     loss: -2.26629804      [[val 0.8649s]]     loss: -2.22669669      
+[[step     7100]]     [[train 3.279s]]     loss: -2.27047634      [[val 0.8589s]]     loss: -2.23339839      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7120]]     [[train 3.2668s]]     loss: -2.26582754      [[val 0.8551s]]     loss: -2.23133376      
+[[step     7140]]     [[train 3.2967s]]     loss: -2.27423702      [[val 0.853s]]     loss: -2.23173438      
+[[step     7160]]     [[train 3.2927s]]     loss: -2.27356597      [[val 0.8564s]]     loss: -2.23577012      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7180]]     [[train 3.2875s]]     loss: -2.276144        [[val 0.8449s]]     loss: -2.24059002      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7200]]     [[train 3.293s]]     loss: -2.27684961      [[val 0.8441s]]     loss: -2.23785469      
+[[step     7220]]     [[train 3.3046s]]     loss: -2.27545929      [[val 0.854s]]     loss: -2.23847003      
+[[step     7240]]     [[train 3.2813s]]     loss: -2.26961202      [[val 0.8613s]]     loss: -2.24086056      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7260]]     [[train 3.2621s]]     loss: -2.27394934      [[val 0.8551s]]     loss: -2.24222399      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7280]]     [[train 3.2575s]]     loss: -2.27401502      [[val 0.8632s]]     loss: -2.23936182      
+[[step     7300]]     [[train 3.2613s]]     loss: -2.27188989      [[val 0.8671s]]     loss: -2.23941341      
+[[step     7320]]     [[train 3.2643s]]     loss: -2.27616297      [[val 0.8573s]]     loss: -2.24328285      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7340]]     [[train 3.2634s]]     loss: -2.28151628      [[val 0.8514s]]     loss: -2.24153351      
+[[step     7360]]     [[train 3.2751s]]     loss: -2.28209651      [[val 0.8498s]]     loss: -2.24101697      
+[[step     7380]]     [[train 3.293s]]     loss: -2.2844185       [[val 0.8475s]]     loss: -2.24203854      
+[[step     7400]]     [[train 3.2945s]]     loss: -2.29238483      [[val 0.8554s]]     loss: -2.24613943      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7420]]     [[train 3.2649s]]     loss: -2.2932908       [[val 0.8533s]]     loss: -2.24211669      
+[[step     7440]]     [[train 3.2394s]]     loss: -2.28862262      [[val 0.8395s]]     loss: -2.2445967       
+[[step     7460]]     [[train 3.232s]]     loss: -2.29075592      [[val 0.8375s]]     loss: -2.24752893      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7480]]     [[train 3.2121s]]     loss: -2.28752467      [[val 0.8396s]]     loss: -2.24743647      
+[[step     7500]]     [[train 3.2258s]]     loss: -2.27843007      [[val 0.8274s]]     loss: -2.24716971      
+[[step     7520]]     [[train 3.2268s]]     loss: -2.27970123      [[val 0.8287s]]     loss: -2.24772978      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7540]]     [[train 3.2431s]]     loss: -2.27723284      [[val 0.8402s]]     loss: -2.2438439       
+[[step     7560]]     [[train 3.1993s]]     loss: -2.27357399      [[val 0.8385s]]     loss: -2.2409444       
+[[step     7580]]     [[train 3.2057s]]     loss: -2.28086997      [[val 0.8395s]]     loss: -2.24300145      
+[[step     7600]]     [[train 3.1647s]]     loss: -2.28710893      [[val 0.8325s]]     loss: -2.24317807      
+[[step     7620]]     [[train 3.1483s]]     loss: -2.289029        [[val 0.837s]]     loss: -2.24498286      
+[[step     7640]]     [[train 3.1106s]]     loss: -2.29302653      [[val 0.8333s]]     loss: -2.24651438      
+[[step     7660]]     [[train 3.1576s]]     loss: -2.29316255      [[val 0.8443s]]     loss: -2.24785346      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7680]]     [[train 3.1184s]]     loss: -2.29153489      [[val 0.8315s]]     loss: -2.24713988      
+[[step     7700]]     [[train 3.156s]]     loss: -2.29515817      [[val 0.8492s]]     loss: -2.2497155       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7720]]     [[train 3.1509s]]     loss: -2.29760735      [[val 0.84s]]     loss: -2.25105903      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7740]]     [[train 3.2024s]]     loss: -2.29066108      [[val 0.8329s]]     loss: -2.25285081      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7760]]     [[train 3.1537s]]     loss: -2.29313341      [[val 0.8213s]]     loss: -2.25392801      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7780]]     [[train 3.1719s]]     loss: -2.29407519      [[val 0.8265s]]     loss: -2.25516359      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     7800]]     [[train 3.139s]]     loss: -2.29026637      [[val 0.8073s]]     loss: -2.25099035      
+[[step     7820]]     [[train 3.1633s]]     loss: -2.28888242      [[val 0.8232s]]     loss: -2.25195526      
+[[step     7840]]     [[train 3.1471s]]     loss: -2.29812574      [[val 0.8281s]]     loss: -2.25037316      
+[[step     7860]]     [[train 3.1744s]]     loss: -2.29575265      [[val 0.8305s]]     loss: -2.249736        
+[[step     7880]]     [[train 3.2171s]]     loss: -2.29328662      [[val 0.8359s]]     loss: -2.24925118      
+[[step     7900]]     [[train 3.2554s]]     loss: -2.29047179      [[val 0.851s]]     loss: -2.24868923      
+[[step     7920]]     [[train 3.2391s]]     loss: -2.28884146      [[val 0.845s]]     loss: -2.24710113      
+[[step     7940]]     [[train 3.2267s]]     loss: -2.29459956      [[val 0.8537s]]     loss: -2.25141896      
+[[step     7960]]     [[train 3.2159s]]     loss: -2.29632498      [[val 0.8462s]]     loss: -2.25159806      
+[[step     7980]]     [[train 3.1582s]]     loss: -2.3026826       [[val 0.8498s]]     loss: -2.25285801      
+[[step     8000]]     [[train 3.1242s]]     loss: -2.31075123      [[val 0.842s]]     loss: -2.25495272      
+[[step     8020]]     [[train 3.1204s]]     loss: -2.31291792      [[val 0.8405s]]     loss: -2.26031068      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8040]]     [[train 3.1117s]]     loss: -2.3078612       [[val 0.8248s]]     loss: -2.26051292      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8060]]     [[train 3.1083s]]     loss: -2.3148131       [[val 0.8272s]]     loss: -2.2627042       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8080]]     [[train 3.0843s]]     loss: -2.30920711      [[val 0.8124s]]     loss: -2.2594456       
+[[step     8100]]     [[train 3.0684s]]     loss: -2.31119398      [[val 0.8138s]]     loss: -2.26489636      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8120]]     [[train 3.0656s]]     loss: -2.30711605      [[val 0.813s]]     loss: -2.25979476      
+[[step     8140]]     [[train 3.0759s]]     loss: -2.30446612      [[val 0.8177s]]     loss: -2.25931744      
+[[step     8160]]     [[train 3.0977s]]     loss: -2.29788596      [[val 0.8202s]]     loss: -2.25752029      
+[[step     8180]]     [[train 3.148s]]     loss: -2.30124795      [[val 0.8235s]]     loss: -2.2625866       
+[[step     8200]]     [[train 3.1389s]]     loss: -2.29831903      [[val 0.8283s]]     loss: -2.26228473      
+[[step     8220]]     [[train 3.1949s]]     loss: -2.29829137      [[val 0.8238s]]     loss: -2.2639684       
+[[step     8240]]     [[train 3.1809s]]     loss: -2.30360138      [[val 0.8236s]]     loss: -2.26568899      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8260]]     [[train 3.2057s]]     loss: -2.31004474      [[val 0.8278s]]     loss: -2.26687924      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8280]]     [[train 3.1642s]]     loss: -2.31139931      [[val 0.8247s]]     loss: -2.26776167      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8300]]     [[train 3.226s]]     loss: -2.3122243       [[val 0.8175s]]     loss: -2.26396182      
+[[step     8320]]     [[train 3.1614s]]     loss: -2.3157058       [[val 0.8182s]]     loss: -2.26603183      
+[[step     8340]]     [[train 3.1529s]]     loss: -2.31691645      [[val 0.8175s]]     loss: -2.26493328      
+[[step     8360]]     [[train 3.171s]]     loss: -2.31703197      [[val 0.819s]]     loss: -2.26015228      
+[[step     8380]]     [[train 3.2373s]]     loss: -2.31539344      [[val 0.8363s]]     loss: -2.26294603      
+[[step     8400]]     [[train 3.2299s]]     loss: -2.31507098      [[val 0.8427s]]     loss: -2.26532234      
+[[step     8420]]     [[train 3.2986s]]     loss: -2.31481766      [[val 0.856s]]     loss: -2.26594048      
+[[step     8440]]     [[train 3.3625s]]     loss: -2.31463605      [[val 0.8664s]]     loss: -2.26615438      
+[[step     8460]]     [[train 3.3831s]]     loss: -2.31279875      [[val 0.8735s]]     loss: -2.26901597      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8480]]     [[train 3.4149s]]     loss: -2.31245152      [[val 0.8696s]]     loss: -2.26536397      
+[[step     8500]]     [[train 3.4135s]]     loss: -2.31515358      [[val 0.8731s]]     loss: -2.26329186      
+[[step     8520]]     [[train 3.38s]]     loss: -2.3169461       [[val 0.8664s]]     loss: -2.26364554      
+[[step     8540]]     [[train 3.3613s]]     loss: -2.31286234      [[val 0.8598s]]     loss: -2.26213175      
+[[step     8560]]     [[train 3.3651s]]     loss: -2.31141675      [[val 0.8575s]]     loss: -2.26741418      
+[[step     8580]]     [[train 3.3676s]]     loss: -2.31926317      [[val 0.8574s]]     loss: -2.26717356      
+[[step     8600]]     [[train 3.401s]]     loss: -2.32235844      [[val 0.8532s]]     loss: -2.27079559      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8620]]     [[train 3.4506s]]     loss: -2.32310996      [[val 0.8618s]]     loss: -2.27014535      
+[[step     8640]]     [[train 3.4585s]]     loss: -2.32847548      [[val 0.868s]]     loss: -2.27309631      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8660]]     [[train 3.4371s]]     loss: -2.32976604      [[val 0.8692s]]     loss: -2.27002231      
+[[step     8680]]     [[train 3.4074s]]     loss: -2.32472072      [[val 0.866s]]     loss: -2.27002418      
+[[step     8700]]     [[train 3.3798s]]     loss: -2.31525245      [[val 0.8633s]]     loss: -2.26809261      
+[[step     8720]]     [[train 3.3885s]]     loss: -2.31313467      [[val 0.8595s]]     loss: -2.26141483      
+[[step     8740]]     [[train 3.4177s]]     loss: -2.31404273      [[val 0.8594s]]     loss: -2.25816261      
+[[step     8760]]     [[train 3.4285s]]     loss: -2.31313299      [[val 0.858s]]     loss: -2.26020594      
+[[step     8780]]     [[train 3.4108s]]     loss: -2.31387119      [[val 0.859s]]     loss: -2.25992943      
+[[step     8800]]     [[train 3.4358s]]     loss: -2.31819685      [[val 0.8663s]]     loss: -2.26054478      
+[[step     8820]]     [[train 3.3986s]]     loss: -2.32332122      [[val 0.8735s]]     loss: -2.27021102      
+[[step     8840]]     [[train 3.3718s]]     loss: -2.31856172      [[val 0.869s]]     loss: -2.27553221      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     8860]]     [[train 3.3531s]]     loss: -2.32119016      [[val 0.8666s]]     loss: -2.27332865      
+[[step     8880]]     [[train 3.3678s]]     loss: -2.31905766      [[val 0.8717s]]     loss: -2.27138083      
+[[step     8900]]     [[train 3.3783s]]     loss: -2.32226051      [[val 0.8662s]]     loss: -2.27217513      
+[[step     8920]]     [[train 3.4131s]]     loss: -2.32406155      [[val 0.8575s]]     loss: -2.26965744      
+[[step     8940]]     [[train 3.415s]]     loss: -2.32990653      [[val 0.8655s]]     loss: -2.26133897      
+[[step     8960]]     [[train 3.4141s]]     loss: -2.33142532      [[val 0.8547s]]     loss: -2.26655257      
+[[step     8980]]     [[train 3.4334s]]     loss: -2.33556545      [[val 0.8566s]]     loss: -2.27205436      
+[[step     9000]]     [[train 3.4209s]]     loss: -2.33671542      [[val 0.8543s]]     loss: -2.27289053      
+[[step     9020]]     [[train 3.4138s]]     loss: -2.32520043      [[val 0.8673s]]     loss: -2.27211814      
+[[step     9040]]     [[train 3.399s]]     loss: -2.32626425      [[val 0.8642s]]     loss: -2.27752666      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     9060]]     [[train 3.3731s]]     loss: -2.32168157      [[val 0.8707s]]     loss: -2.27113539      
+[[step     9080]]     [[train 3.3648s]]     loss: -2.31925295      [[val 0.8613s]]     loss: -2.26841818      
+[[step     9100]]     [[train 3.3326s]]     loss: -2.32076609      [[val 0.8658s]]     loss: -2.26853783      
+[[step     9120]]     [[train 3.3056s]]     loss: -2.32699568      [[val 0.8471s]]     loss: -2.27034488      
+[[step     9140]]     [[train 3.3129s]]     loss: -2.32458502      [[val 0.8507s]]     loss: -2.27135842      
+[[step     9160]]     [[train 3.3432s]]     loss: -2.33021029      [[val 0.8575s]]     loss: -2.27265354      
+[[step     9180]]     [[train 3.3681s]]     loss: -2.32996083      [[val 0.8609s]]     loss: -2.27589134      
+[[step     9200]]     [[train 3.3804s]]     loss: -2.329546        [[val 0.8574s]]     loss: -2.27632962      
+[[step     9220]]     [[train 3.3931s]]     loss: -2.33205456      [[val 0.8604s]]     loss: -2.27799742      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     9240]]     [[train 3.4236s]]     loss: -2.33487633      [[val 0.8609s]]     loss: -2.27952066      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     9260]]     [[train 3.4353s]]     loss: -2.33607154      [[val 0.8568s]]     loss: -2.28125259      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     9280]]     [[train 3.4231s]]     loss: -2.34304158      [[val 0.8618s]]     loss: -2.28015934      
+[[step     9300]]     [[train 3.4155s]]     loss: -2.34193653      [[val 0.8589s]]     loss: -2.28080107      
+[[step     9320]]     [[train 3.4244s]]     loss: -2.3444066       [[val 0.8681s]]     loss: -2.27935542      
+[[step     9340]]     [[train 3.3972s]]     loss: -2.34190696      [[val 0.8662s]]     loss: -2.27800066      
+[[step     9360]]     [[train 3.3983s]]     loss: -2.34574711      [[val 0.8714s]]     loss: -2.2775307       
+[[step     9380]]     [[train 3.373s]]     loss: -2.34626981      [[val 0.863s]]     loss: -2.27568331      
+[[step     9400]]     [[train 3.4086s]]     loss: -2.34077865      [[val 0.8772s]]     loss: -2.2749889       
+[[step     9420]]     [[train 3.3591s]]     loss: -2.34207748      [[val 0.8685s]]     loss: -2.27429466      
+[[step     9440]]     [[train 3.3443s]]     loss: -2.3400285       [[val 0.8682s]]     loss: -2.27617346      
+[[step     9460]]     [[train 3.3257s]]     loss: -2.3399724       [[val 0.8695s]]     loss: -2.28023147      
+[[step     9480]]     [[train 3.3452s]]     loss: -2.33751998      [[val 0.8761s]]     loss: -2.28554379      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     9500]]     [[train 3.3605s]]     loss: -2.34000224      [[val 0.8774s]]     loss: -2.283703        
+[[step     9520]]     [[train 3.4209s]]     loss: -2.34340292      [[val 0.8793s]]     loss: -2.28716913      
+saving model to checkpoints/1564411620_iam_online/model
+[[step     9540]]     [[train 3.4446s]]     loss: -2.34924643      [[val 0.8825s]]     loss: -2.28592926      
+[[step     9560]]     [[train 3.4288s]]     loss: -2.35043888      [[val 0.8759s]]     loss: -2.28083396      
+[[step     9580]]     [[train 3.4115s]]     loss: -2.35240334      [[val 0.8762s]]     loss: -2.27843223      
+[[step     9600]]     [[train 3.3698s]]     loss: -2.3578302       [[val 0.8711s]]     loss: -2.27947228      
+[[step     9620]]     [[train 3.3264s]]     loss: -2.35559224      [[val 0.871s]]     loss: -2.27901013      
+[[step     9640]]     [[train 3.3707s]]     loss: -2.35159591      [[val 0.8707s]]     loss: -2.27659174      
+[[step     9660]]     [[train 3.3837s]]     loss: -2.34966999      [[val 0.8722s]]     loss: -2.27831398      
+[[step     9680]]     [[train 3.3929s]]     loss: -2.34757873      [[val 0.8699s]]     loss: -2.27810835      
+[[step     9700]]     [[train 3.4225s]]     loss: -2.35105714      [[val 0.8677s]]     loss: -2.28217484      
+[[step     9720]]     [[train 3.4297s]]     loss: -2.34716014      [[val 0.8652s]]     loss: -2.28241115      
+[[step     9740]]     [[train 3.4311s]]     loss: -2.34955188      [[val 0.86s]]     loss: -2.28676655      
+[[step     9760]]     [[train 3.3991s]]     loss: -2.34269256      [[val 0.8536s]]     loss: -2.2873257       
+saving model to checkpoints/1564411620_iam_online/model
+[[step     9780]]     [[train 3.4038s]]     loss: -2.34241348      [[val 0.8602s]]     loss: -2.28669763      
+[[step     9800]]     [[train 3.397s]]     loss: -2.33933559      [[val 0.8541s]]     loss: -2.28619246      
+[[step     9820]]     [[train 3.4314s]]     loss: -2.34227728      [[val 0.861s]]     loss: -2.28575058      
+[[step     9840]]     [[train 3.3839s]]     loss: -2.34525353      [[val 0.8597s]]     loss: -2.28441928      
+[[step     9860]]     [[train 3.4393s]]     loss: -2.34722935      [[val 0.87s]]     loss: -2.28563351      
+[[step     9880]]     [[train 3.4555s]]     loss: -2.35167085      [[val 0.8675s]]     loss: -2.28493164      
+[[step     9900]]     [[train 3.4423s]]     loss: -2.35245935      [[val 0.8688s]]     loss: -2.28488267      
+[[step     9920]]     [[train 3.431s]]     loss: -2.35476899      [[val 0.8669s]]     loss: -2.28239393      
+[[step     9940]]     [[train 3.4184s]]     loss: -2.35579374      [[val 0.8637s]]     loss: -2.28377269      
+[[step     9960]]     [[train 3.4418s]]     loss: -2.36218825      [[val 0.8569s]]     loss: -2.2853548       
+[[step     9980]]     [[train 3.4014s]]     loss: -2.36177365      [[val 0.8511s]]     loss: -2.28372108      
+[[step    10000]]     [[train 3.3971s]]     loss: -2.36096808      [[val 0.8579s]]     loss: -2.28363407      
+[[step    10020]]     [[train 3.376s]]     loss: -2.36326251      [[val 0.8543s]]     loss: -2.2861869       
+[[step    10040]]     [[train 3.4353s]]     loss: -2.35907478      [[val 0.8581s]]     loss: -2.28467029      
+[[step    10060]]     [[train 3.4107s]]     loss: -2.35927218      [[val 0.8614s]]     loss: -2.28669567      
+[[step    10080]]     [[train 3.4231s]]     loss: -2.35538344      [[val 0.8616s]]     loss: -2.28919863      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    10100]]     [[train 3.4464s]]     loss: -2.35488213      [[val 0.8549s]]     loss: -2.28754529      
+[[step    10120]]     [[train 3.4313s]]     loss: -2.35581465      [[val 0.8584s]]     loss: -2.29022523      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    10140]]     [[train 3.3793s]]     loss: -2.35670518      [[val 0.8493s]]     loss: -2.29313603      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    10160]]     [[train 3.3658s]]     loss: -2.35344903      [[val 0.8494s]]     loss: -2.2882135       
+[[step    10180]]     [[train 3.3803s]]     loss: -2.35749258      [[val 0.8453s]]     loss: -2.2897386       
+[[step    10200]]     [[train 3.3986s]]     loss: -2.36039384      [[val 0.8573s]]     loss: -2.28847782      
+[[step    10220]]     [[train 3.4144s]]     loss: -2.35878152      [[val 0.8525s]]     loss: -2.28698645      
+[[step    10240]]     [[train 3.4518s]]     loss: -2.36195085      [[val 0.8675s]]     loss: -2.28597851      
+[[step    10260]]     [[train 3.4888s]]     loss: -2.36700191      [[val 0.866s]]     loss: -2.28722066      
+[[step    10280]]     [[train 3.4761s]]     loss: -2.37012291      [[val 0.8722s]]     loss: -2.28895041      
+[[step    10300]]     [[train 3.4548s]]     loss: -2.37347576      [[val 0.8714s]]     loss: -2.2882424       
+[[step    10320]]     [[train 3.4619s]]     loss: -2.37254944      [[val 0.878s]]     loss: -2.28807092      
+[[step    10340]]     [[train 3.4484s]]     loss: -2.37030147      [[val 0.8744s]]     loss: -2.28445821      
+[[step    10360]]     [[train 3.4205s]]     loss: -2.37041704      [[val 0.8724s]]     loss: -2.29038563      
+[[step    10380]]     [[train 3.4184s]]     loss: -2.36742308      [[val 0.8804s]]     loss: -2.28813709      
+[[step    10400]]     [[train 3.415s]]     loss: -2.36294849      [[val 0.8708s]]     loss: -2.29282522      
+[[step    10420]]     [[train 3.4078s]]     loss: -2.36545889      [[val 0.8663s]]     loss: -2.29439741      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    10440]]     [[train 3.3527s]]     loss: -2.36474461      [[val 0.8664s]]     loss: -2.29675929      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    10460]]     [[train 3.3523s]]     loss: -2.36259394      [[val 0.883s]]     loss: -2.29290728      
+[[step    10480]]     [[train 3.329s]]     loss: -2.37024823      [[val 0.8697s]]     loss: -2.2955273       
+[[step    10500]]     [[train 3.3255s]]     loss: -2.3793519       [[val 0.8681s]]     loss: -2.29620695      
+[[step    10520]]     [[train 3.3518s]]     loss: -2.38253773      [[val 0.8772s]]     loss: -2.29366116      
+[[step    10540]]     [[train 3.3828s]]     loss: -2.38727084      [[val 0.8837s]]     loss: -2.29302721      
+[[step    10560]]     [[train 3.3914s]]     loss: -2.38438059      [[val 0.8788s]]     loss: -2.29096571      
+[[step    10580]]     [[train 3.3804s]]     loss: -2.37651825      [[val 0.878s]]     loss: -2.28815927      
+[[step    10600]]     [[train 3.3948s]]     loss: -2.36952631      [[val 0.8762s]]     loss: -2.28915738      
+[[step    10620]]     [[train 3.3615s]]     loss: -2.36742015      [[val 0.867s]]     loss: -2.28854853      
+[[step    10640]]     [[train 3.3813s]]     loss: -2.36916325      [[val 0.8574s]]     loss: -2.29287122      
+[[step    10660]]     [[train 3.3759s]]     loss: -2.36987409      [[val 0.8533s]]     loss: -2.29615095      
+[[step    10680]]     [[train 3.4251s]]     loss: -2.36775778      [[val 0.8579s]]     loss: -2.29711494      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    10700]]     [[train 3.4051s]]     loss: -2.36740885      [[val 0.8657s]]     loss: -2.29333903      
+[[step    10720]]     [[train 3.4364s]]     loss: -2.36598848      [[val 0.8641s]]     loss: -2.29696252      
+[[step    10740]]     [[train 3.4084s]]     loss: -2.36076786      [[val 0.8647s]]     loss: -2.29234424      
+[[step    10760]]     [[train 3.3987s]]     loss: -2.36394666      [[val 0.8699s]]     loss: -2.28851704      
+[[step    10780]]     [[train 3.3824s]]     loss: -2.36612455      [[val 0.8674s]]     loss: -2.29236375      
+[[step    10800]]     [[train 3.3899s]]     loss: -2.36803562      [[val 0.8637s]]     loss: -2.2915573       
+[[step    10820]]     [[train 3.3558s]]     loss: -2.36820588      [[val 0.8623s]]     loss: -2.28855934      
+[[step    10840]]     [[train 3.3874s]]     loss: -2.37865383      [[val 0.8661s]]     loss: -2.2911019       
+[[step    10860]]     [[train 3.3923s]]     loss: -2.38244171      [[val 0.8533s]]     loss: -2.29354295      
+[[step    10880]]     [[train 3.409s]]     loss: -2.38724757      [[val 0.8591s]]     loss: -2.28906212      
+[[step    10900]]     [[train 3.4066s]]     loss: -2.39026299      [[val 0.8642s]]     loss: -2.29059091      
+[[step    10920]]     [[train 3.4252s]]     loss: -2.39213014      [[val 0.8711s]]     loss: -2.29141259      
+[[step    10940]]     [[train 3.4245s]]     loss: -2.38905347      [[val 0.8712s]]     loss: -2.2926738       
+[[step    10960]]     [[train 3.4171s]]     loss: -2.38463006      [[val 0.8714s]]     loss: -2.29135774      
+[[step    10980]]     [[train 3.4391s]]     loss: -2.38243022      [[val 0.8639s]]     loss: -2.29370103      
+[[step    11000]]     [[train 3.4279s]]     loss: -2.38115377      [[val 0.8585s]]     loss: -2.29411599      
+[[step    11020]]     [[train 3.4234s]]     loss: -2.37724724      [[val 0.859s]]     loss: -2.29377452      
+[[step    11040]]     [[train 3.401s]]     loss: -2.36806632      [[val 0.8515s]]     loss: -2.29038407      
+[[step    11060]]     [[train 3.3924s]]     loss: -2.37012026      [[val 0.8668s]]     loss: -2.29314382      
+[[step    11080]]     [[train 3.3647s]]     loss: -2.37032675      [[val 0.8713s]]     loss: -2.28916798      
+[[step    11100]]     [[train 3.3747s]]     loss: -2.37040654      [[val 0.8659s]]     loss: -2.29577033      
+[[step    11120]]     [[train 3.3951s]]     loss: -2.374964        [[val 0.8632s]]     loss: -2.29588407      
+[[step    11140]]     [[train 3.4025s]]     loss: -2.38127014      [[val 0.8703s]]     loss: -2.2972463       
+saving model to checkpoints/1564411620_iam_online/model
+[[step    11160]]     [[train 3.4176s]]     loss: -2.38290527      [[val 0.8624s]]     loss: -2.29535946      
+[[step    11180]]     [[train 3.4168s]]     loss: -2.38645823      [[val 0.8572s]]     loss: -2.29876789      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    11200]]     [[train 3.4216s]]     loss: -2.38138811      [[val 0.8664s]]     loss: -2.29289375      
+[[step    11220]]     [[train 3.4516s]]     loss: -2.38466103      [[val 0.8682s]]     loss: -2.29548026      
+[[step    11240]]     [[train 3.4531s]]     loss: -2.38335716      [[val 0.8664s]]     loss: -2.29399463      
+[[step    11260]]     [[train 3.4832s]]     loss: -2.38446232      [[val 0.8713s]]     loss: -2.29366354      
+[[step    11280]]     [[train 3.4905s]]     loss: -2.3769132       [[val 0.8723s]]     loss: -2.29332186      
+[[step    11300]]     [[train 3.4593s]]     loss: -2.38114749      [[val 0.8758s]]     loss: -2.29086078      
+[[step    11320]]     [[train 3.4293s]]     loss: -2.37649953      [[val 0.8776s]]     loss: -2.28859558      
+[[step    11340]]     [[train 3.4224s]]     loss: -2.38042586      [[val 0.8776s]]     loss: -2.29058099      
+[[step    11360]]     [[train 3.3932s]]     loss: -2.37796476      [[val 0.8673s]]     loss: -2.29298999      
+[[step    11380]]     [[train 3.3789s]]     loss: -2.37854815      [[val 0.8691s]]     loss: -2.29203291      
+[[step    11400]]     [[train 3.4057s]]     loss: -2.38210794      [[val 0.8623s]]     loss: -2.29249539      
+[[step    11420]]     [[train 3.3931s]]     loss: -2.38415957      [[val 0.8591s]]     loss: -2.29448892      
+[[step    11440]]     [[train 3.3995s]]     loss: -2.38804538      [[val 0.8609s]]     loss: -2.29331273      
+[[step    11460]]     [[train 3.3985s]]     loss: -2.39046655      [[val 0.8565s]]     loss: -2.2943496       
+[[step    11480]]     [[train 3.4422s]]     loss: -2.39387123      [[val 0.8642s]]     loss: -2.29454087      
+[[step    11500]]     [[train 3.4337s]]     loss: -2.39423713      [[val 0.8675s]]     loss: -2.29795648      
+[[step    11520]]     [[train 3.4071s]]     loss: -2.39681736      [[val 0.8582s]]     loss: -2.29742406      
+[[step    11540]]     [[train 3.4284s]]     loss: -2.3972122       [[val 0.855s]]     loss: -2.29944051      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    11560]]     [[train 3.4126s]]     loss: -2.40252755      [[val 0.8632s]]     loss: -2.29824023      
+[[step    11580]]     [[train 3.4025s]]     loss: -2.40602449      [[val 0.8628s]]     loss: -2.29667418      
+[[step    11600]]     [[train 3.3858s]]     loss: -2.40105889      [[val 0.8566s]]     loss: -2.29519618      
+[[step    11620]]     [[train 3.4249s]]     loss: -2.39730037      [[val 0.8663s]]     loss: -2.29599028      
+[[step    11640]]     [[train 3.3971s]]     loss: -2.39198116      [[val 0.8622s]]     loss: -2.29769239      
+[[step    11660]]     [[train 3.4229s]]     loss: -2.38345525      [[val 0.8714s]]     loss: -2.29593279      
+[[step    11680]]     [[train 3.4092s]]     loss: -2.38064685      [[val 0.8657s]]     loss: -2.30003594      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    11700]]     [[train 3.4166s]]     loss: -2.38262091      [[val 0.8634s]]     loss: -2.3021539       
+saving model to checkpoints/1564411620_iam_online/model
+[[step    11720]]     [[train 3.3788s]]     loss: -2.38447309      [[val 0.8573s]]     loss: -2.30102396      
+[[step    11740]]     [[train 3.4044s]]     loss: -2.3847349       [[val 0.8651s]]     loss: -2.30059924      
+[[step    11760]]     [[train 3.3801s]]     loss: -2.38846354      [[val 0.8534s]]     loss: -2.29944849      
+[[step    11780]]     [[train 3.3661s]]     loss: -2.39140491      [[val 0.8632s]]     loss: -2.29627972      
+[[step    11800]]     [[train 3.3494s]]     loss: -2.3994506       [[val 0.869s]]     loss: -2.29456827      
+[[step    11820]]     [[train 3.4188s]]     loss: -2.39883518      [[val 0.8762s]]     loss: -2.29700518      
+[[step    11840]]     [[train 3.4207s]]     loss: -2.40266887      [[val 0.8741s]]     loss: -2.293128        
+[[step    11860]]     [[train 3.4624s]]     loss: -2.40458042      [[val 0.8871s]]     loss: -2.29504791      
+[[step    11880]]     [[train 3.4638s]]     loss: -2.4019361       [[val 0.8829s]]     loss: -2.29265151      
+[[step    11900]]     [[train 3.4859s]]     loss: -2.39365666      [[val 0.8767s]]     loss: -2.29534481      
+[[step    11920]]     [[train 3.4533s]]     loss: -2.39807384      [[val 0.872s]]     loss: -2.29187093      
+[[step    11940]]     [[train 3.4313s]]     loss: -2.39973315      [[val 0.8704s]]     loss: -2.29503096      
+[[step    11960]]     [[train 3.409s]]     loss: -2.39751846      [[val 0.8659s]]     loss: -2.29451085      
+[[step    11980]]     [[train 3.3888s]]     loss: -2.40096684      [[val 0.8582s]]     loss: -2.30021931      
+[[step    12000]]     [[train 3.4356s]]     loss: -2.3988755       [[val 0.8671s]]     loss: -2.29914856      
+[[step    12020]]     [[train 3.398s]]     loss: -2.40215372      [[val 0.8677s]]     loss: -2.30279664      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12040]]     [[train 3.4195s]]     loss: -2.3963235       [[val 0.8688s]]     loss: -2.30296179      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12060]]     [[train 3.4256s]]     loss: -2.39973783      [[val 0.8641s]]     loss: -2.30425054      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12080]]     [[train 3.4078s]]     loss: -2.40389308      [[val 0.866s]]     loss: -2.30219443      
+[[step    12100]]     [[train 3.4007s]]     loss: -2.41234981      [[val 0.8589s]]     loss: -2.29899409      
+[[step    12120]]     [[train 3.42s]]     loss: -2.413518        [[val 0.8617s]]     loss: -2.29886535      
+[[step    12140]]     [[train 3.4101s]]     loss: -2.42202662      [[val 0.8676s]]     loss: -2.29787253      
+[[step    12160]]     [[train 3.3636s]]     loss: -2.41710309      [[val 0.8655s]]     loss: -2.29642443      
+[[step    12180]]     [[train 3.3919s]]     loss: -2.41898832      [[val 0.8742s]]     loss: -2.29617255      
+[[step    12200]]     [[train 3.3593s]]     loss: -2.41414641      [[val 0.8772s]]     loss: -2.29640996      
+[[step    12220]]     [[train 3.38s]]     loss: -2.40230794      [[val 0.8766s]]     loss: -2.29161967      
+[[step    12240]]     [[train 3.366s]]     loss: -2.39540705      [[val 0.8678s]]     loss: -2.29223749      
+[[step    12260]]     [[train 3.3746s]]     loss: -2.40447093      [[val 0.8644s]]     loss: -2.29581561      
+[[step    12280]]     [[train 3.4011s]]     loss: -2.39815682      [[val 0.8574s]]     loss: -2.29854886      
+[[step    12300]]     [[train 3.4247s]]     loss: -2.40159097      [[val 0.8612s]]     loss: -2.2975686       
+[[step    12320]]     [[train 3.4058s]]     loss: -2.4017738       [[val 0.8484s]]     loss: -2.30261687      
+[[step    12340]]     [[train 3.4182s]]     loss: -2.40059659      [[val 0.8496s]]     loss: -2.30033083      
+[[step    12360]]     [[train 3.4136s]]     loss: -2.39439495      [[val 0.8546s]]     loss: -2.30044124      
+[[step    12380]]     [[train 3.4048s]]     loss: -2.39511898      [[val 0.8576s]]     loss: -2.29750142      
+[[step    12400]]     [[train 3.3593s]]     loss: -2.40022292      [[val 0.8541s]]     loss: -2.30241725      
+[[step    12420]]     [[train 3.4144s]]     loss: -2.40859356      [[val 0.8669s]]     loss: -2.29897105      
+[[step    12440]]     [[train 3.3874s]]     loss: -2.4153032       [[val 0.8643s]]     loss: -2.30239284      
+[[step    12460]]     [[train 3.4362s]]     loss: -2.41453136      [[val 0.8631s]]     loss: -2.30137614      
+[[step    12480]]     [[train 3.4052s]]     loss: -2.41604249      [[val 0.8527s]]     loss: -2.30123433      
+[[step    12500]]     [[train 3.4077s]]     loss: -2.41130551      [[val 0.8517s]]     loss: -2.29936136      
+[[step    12520]]     [[train 3.3808s]]     loss: -2.40598087      [[val 0.8566s]]     loss: -2.30021283      
+[[step    12540]]     [[train 3.3845s]]     loss: -2.40765764      [[val 0.8569s]]     loss: -2.29819384      
+[[step    12560]]     [[train 3.3706s]]     loss: -2.41001838      [[val 0.8563s]]     loss: -2.29604796      
+[[step    12580]]     [[train 3.3773s]]     loss: -2.4110977       [[val 0.8602s]]     loss: -2.29851375      
+[[step    12600]]     [[train 3.4084s]]     loss: -2.41220236      [[val 0.8658s]]     loss: -2.29864274      
+[[step    12620]]     [[train 3.3676s]]     loss: -2.41791825      [[val 0.8642s]]     loss: -2.30073522      
+[[step    12640]]     [[train 3.4119s]]     loss: -2.4158608       [[val 0.87s]]     loss: -2.29832715      
+[[step    12660]]     [[train 3.4142s]]     loss: -2.41805465      [[val 0.8698s]]     loss: -2.30073795      
+[[step    12680]]     [[train 3.4298s]]     loss: -2.41666933      [[val 0.875s]]     loss: -2.30084542      
+[[step    12700]]     [[train 3.4001s]]     loss: -2.41778875      [[val 0.8691s]]     loss: -2.29961826      
+[[step    12720]]     [[train 3.4346s]]     loss: -2.41933853      [[val 0.8607s]]     loss: -2.29777371      
+[[step    12740]]     [[train 3.4003s]]     loss: -2.42350537      [[val 0.8601s]]     loss: -2.30261141      
+[[step    12760]]     [[train 3.3786s]]     loss: -2.42681599      [[val 0.8573s]]     loss: -2.29938787      
+[[step    12780]]     [[train 3.3831s]]     loss: -2.42821293      [[val 0.8584s]]     loss: -2.29745059      
+[[step    12800]]     [[train 3.442s]]     loss: -2.42592367      [[val 0.8664s]]     loss: -2.29602539      
+[[step    12820]]     [[train 3.4122s]]     loss: -2.42144794      [[val 0.8693s]]     loss: -2.29873214      
+[[step    12840]]     [[train 3.4546s]]     loss: -2.41958142      [[val 0.8705s]]     loss: -2.29589669      
+[[step    12860]]     [[train 3.4526s]]     loss: -2.41601686      [[val 0.8825s]]     loss: -2.29915881      
+[[step    12880]]     [[train 3.4329s]]     loss: -2.42012287      [[val 0.876s]]     loss: -2.29866995      
+[[step    12900]]     [[train 3.4411s]]     loss: -2.41959806      [[val 0.871s]]     loss: -2.30110426      
+[[step    12920]]     [[train 3.4369s]]     loss: -2.42477042      [[val 0.8778s]]     loss: -2.29914112      
+[[step    12940]]     [[train 3.4274s]]     loss: -2.4183256       [[val 0.8792s]]     loss: -2.29910597      
+[[step    12960]]     [[train 3.4583s]]     loss: -2.41822537      [[val 0.8717s]]     loss: -2.29888664      
+[[step    12980]]     [[train 3.4813s]]     loss: -2.41342852      [[val 0.8786s]]     loss: -2.30274667      
+[[step    13000]]     [[train 3.459s]]     loss: -2.41465828      [[val 0.8793s]]     loss: -2.30170899      
+[[step    13020]]     [[train 3.4682s]]     loss: -2.41528976      [[val 0.8711s]]     loss: -2.30155762      
+[[step    13040]]     [[train 3.4316s]]     loss: -2.42236509      [[val 0.8687s]]     loss: -2.30307396      
+[[step    13060]]     [[train 3.4358s]]     loss: -2.42366857      [[val 0.877s]]     loss: -2.30077128      
+[[step    13080]]     [[train 3.4325s]]     loss: -2.43192436      [[val 0.8714s]]     loss: -2.29894425      
+[[step    13100]]     [[train 3.4144s]]     loss: -2.43609477      [[val 0.8702s]]     loss: -2.30009438      
+[[step    13120]]     [[train 3.4577s]]     loss: -2.43367755      [[val 0.8715s]]     loss: -2.29705396      
+[[step    13140]]     [[train 3.445s]]     loss: -2.42810659      [[val 0.8784s]]     loss: -2.29463821      
+[[step    13160]]     [[train 3.4621s]]     loss: -2.43013003      [[val 0.8712s]]     loss: -2.29895894      
+[[step    13180]]     [[train 3.4601s]]     loss: -2.42510059      [[val 0.8802s]]     loss: -2.29599825      
+[[step    13200]]     [[train 3.4634s]]     loss: -2.42459188      [[val 0.8844s]]     loss: -2.2932588       
+[[step    13220]]     [[train 3.3942s]]     loss: -2.42557684      [[val 0.8819s]]     loss: -2.29673158      
+[[step    13240]]     [[train 3.4187s]]     loss: -2.42929364      [[val 0.8738s]]     loss: -2.29710487      
+[[step    13260]]     [[train 3.3528s]]     loss: -2.42265582      [[val 0.8671s]]     loss: -2.29084471      
+[[step    13280]]     [[train 3.3309s]]     loss: -2.4236711       [[val 0.8582s]]     loss: -2.29575727      
+[[step    13300]]     [[train 3.3107s]]     loss: -2.4196284       [[val 0.8564s]]     loss: -2.29965843      
+[[step    13320]]     [[train 3.339s]]     loss: -2.41721241      [[val 0.8551s]]     loss: -2.29771268      
+[[step    13340]]     [[train 3.3244s]]     loss: -2.41902471      [[val 0.8547s]]     loss: -2.29894696      
+[[step    13360]]     [[train 3.3373s]]     loss: -2.42586383      [[val 0.8621s]]     loss: -2.30352325      
+[[step    13380]]     [[train 3.3738s]]     loss: -2.42525162      [[val 0.8684s]]     loss: -2.29903919      
+[[step    13400]]     [[train 3.4066s]]     loss: -2.43202194      [[val 0.868s]]     loss: -2.29429645      
+[[step    13420]]     [[train 3.4386s]]     loss: -2.43413836      [[val 0.8833s]]     loss: -2.29719724      
+[[step    13440]]     [[train 3.476s]]     loss: -2.43608959      [[val 0.8801s]]     loss: -2.29457255      
+[[step    13460]]     [[train 3.4912s]]     loss: -2.43651083      [[val 0.8811s]]     loss: -2.29273186      
+[[step    13480]]     [[train 3.4705s]]     loss: -2.4360952       [[val 0.8728s]]     loss: -2.29396445      
+[[step    13500]]     [[train 3.4417s]]     loss: -2.4312982       [[val 0.8675s]]     loss: -2.29556114      
+[[step    13520]]     [[train 3.3835s]]     loss: -2.43571551      [[val 0.8535s]]     loss: -2.29431594      
+[[step    13540]]     [[train 3.3614s]]     loss: -2.43433717      [[val 0.8625s]]     loss: -2.29767589      
+[[step    13560]]     [[train 3.3567s]]     loss: -2.43521036      [[val 0.8651s]]     loss: -2.2956868       
+[[step    13580]]     [[train 3.3207s]]     loss: -2.4337048       [[val 0.8734s]]     loss: -2.29730648      
+restoring model from checkpoints/1564411620_iam_online/model-12060
+WARNING:tensorflow:From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+From /cluster/yn87erow/thesis/ext/handwriting-synthesis/venv_lme50/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from checkpoints/1564411620_iam_online/model-12060
+Restoring parameters from checkpoints/1564411620_iam_online/model-12060
+[[step    12080]]     [[train 3.386s]]     loss: -2.4397091       [[val 0.8781s]]     loss: -2.30456342      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12100]]     [[train 3.4561s]]     loss: -2.44613577      [[val 0.8866s]]     loss: -2.31084035      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12120]]     [[train 3.5038s]]     loss: -2.45359281      [[val 0.8781s]]     loss: -2.31977659      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12140]]     [[train 3.5617s]]     loss: -2.45963541      [[val 0.8653s]]     loss: -2.32864408      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12160]]     [[train 3.6077s]]     loss: -2.47259338      [[val 0.8658s]]     loss: -2.33535265      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12180]]     [[train 3.614s]]     loss: -2.47855598      [[val 0.8679s]]     loss: -2.34167886      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12200]]     [[train 3.6316s]]     loss: -2.47604532      [[val 0.8685s]]     loss: -2.34073795      
+[[step    12220]]     [[train 3.6055s]]     loss: -2.47529976      [[val 0.8632s]]     loss: -2.34244024      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12240]]     [[train 3.5351s]]     loss: -2.4809975       [[val 0.8576s]]     loss: -2.34307137      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12260]]     [[train 3.5052s]]     loss: -2.48050835      [[val 0.8405s]]     loss: -2.34446572      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12280]]     [[train 3.462s]]     loss: -2.48023871      [[val 0.8339s]]     loss: -2.34029769      
+[[step    12300]]     [[train 3.4268s]]     loss: -2.4836439       [[val 0.8203s]]     loss: -2.3430958       
+[[step    12320]]     [[train 3.4114s]]     loss: -2.48419119      [[val 0.8206s]]     loss: -2.34105942      
+[[step    12340]]     [[train 3.4694s]]     loss: -2.48212152      [[val 0.8408s]]     loss: -2.3426251       
+[[step    12360]]     [[train 3.4858s]]     loss: -2.4836081       [[val 0.837s]]     loss: -2.34323576      
+[[step    12380]]     [[train 3.5183s]]     loss: -2.48339713      [[val 0.8371s]]     loss: -2.34235854      
+[[step    12400]]     [[train 3.4861s]]     loss: -2.49105038      [[val 0.8386s]]     loss: -2.34153234      
+[[step    12420]]     [[train 3.5544s]]     loss: -2.49357601      [[val 0.8482s]]     loss: -2.34108795      
+[[step    12440]]     [[train 3.524s]]     loss: -2.49639077      [[val 0.8323s]]     loss: -2.34091933      
+[[step    12460]]     [[train 3.552s]]     loss: -2.496773        [[val 0.8359s]]     loss: -2.33619547      
+[[step    12480]]     [[train 3.5413s]]     loss: -2.49610735      [[val 0.8299s]]     loss: -2.33748505      
+[[step    12500]]     [[train 3.5517s]]     loss: -2.48906972      [[val 0.8243s]]     loss: -2.33949589      
+[[step    12520]]     [[train 3.5036s]]     loss: -2.4856934       [[val 0.8275s]]     loss: -2.33761142      
+[[step    12540]]     [[train 3.4999s]]     loss: -2.48264201      [[val 0.8212s]]     loss: -2.33978578      
+[[step    12560]]     [[train 3.5112s]]     loss: -2.48480522      [[val 0.8264s]]     loss: -2.34195419      
+[[step    12580]]     [[train 3.4588s]]     loss: -2.48928073      [[val 0.815s]]     loss: -2.34233263      
+[[step    12600]]     [[train 3.5271s]]     loss: -2.48895136      [[val 0.8272s]]     loss: -2.33765295      
+[[step    12620]]     [[train 3.5393s]]     loss: -2.49367623      [[val 0.8152s]]     loss: -2.34110273      
+[[step    12640]]     [[train 3.5191s]]     loss: -2.49780405      [[val 0.8332s]]     loss: -2.33559846      
+[[step    12660]]     [[train 3.5245s]]     loss: -2.49676953      [[val 0.8426s]]     loss: -2.33696629      
+[[step    12680]]     [[train 3.5201s]]     loss: -2.49234026      [[val 0.8532s]]     loss: -2.33522474      
+[[step    12700]]     [[train 3.4846s]]     loss: -2.49467019      [[val 0.8403s]]     loss: -2.33922305      
+[[step    12720]]     [[train 3.4537s]]     loss: -2.49603368      [[val 0.8387s]]     loss: -2.33556616      
+[[step    12740]]     [[train 3.4765s]]     loss: -2.49337239      [[val 0.8439s]]     loss: -2.33831628      
+[[step    12760]]     [[train 3.4101s]]     loss: -2.49275571      [[val 0.8282s]]     loss: -2.33661052      
+[[step    12780]]     [[train 3.4335s]]     loss: -2.49654592      [[val 0.8275s]]     loss: -2.33744518      
+[[step    12800]]     [[train 3.4573s]]     loss: -2.49754004      [[val 0.8462s]]     loss: -2.33598126      
+[[step    12820]]     [[train 3.4936s]]     loss: -2.49637064      [[val 0.8594s]]     loss: -2.33653541      
+[[step    12840]]     [[train 3.4781s]]     loss: -2.49899744      [[val 0.8418s]]     loss: -2.33871853      
+[[step    12860]]     [[train 3.5229s]]     loss: -2.50432311      [[val 0.8573s]]     loss: -2.33720745      
+[[step    12880]]     [[train 3.5228s]]     loss: -2.50857947      [[val 0.8613s]]     loss: -2.33480391      
+[[step    12900]]     [[train 3.5291s]]     loss: -2.50433333      [[val 0.8585s]]     loss: -2.33452107      
+[[step    12920]]     [[train 3.5297s]]     loss: -2.50634397      [[val 0.8531s]]     loss: -2.33399192      
+[[step    12940]]     [[train 3.6193s]]     loss: -2.50424013      [[val 0.8713s]]     loss: -2.33035211      
+[[step    12960]]     [[train 3.6938s]]     loss: -2.50199883      [[val 0.8703s]]     loss: -2.33287185      
+[[step    12980]]     [[train 3.7495s]]     loss: -2.49741976      [[val 0.8724s]]     loss: -2.33515376      
+[[step    13000]]     [[train 3.7371s]]     loss: -2.50017811      [[val 0.8765s]]     loss: -2.33409505      
+[[step    13020]]     [[train 3.7002s]]     loss: -2.50014625      [[val 0.8805s]]     loss: -2.33239514      
+[[step    13040]]     [[train 3.6759s]]     loss: -2.50283721      [[val 0.8749s]]     loss: -2.33183707      
+[[step    13060]]     [[train 3.6316s]]     loss: -2.5019258       [[val 0.8774s]]     loss: -2.32990311      
+[[step    13080]]     [[train 3.6538s]]     loss: -2.50517618      [[val 0.8794s]]     loss: -2.32821191      
+[[step    13100]]     [[train 3.6667s]]     loss: -2.50558909      [[val 0.8831s]]     loss: -2.3292984       
+[[step    13120]]     [[train 3.7358s]]     loss: -2.50608828      [[val 0.8735s]]     loss: -2.33082949      
+[[step    13140]]     [[train 3.7329s]]     loss: -2.50502104      [[val 0.8872s]]     loss: -2.33145462      
+[[step    13160]]     [[train 3.7745s]]     loss: -2.50385914      [[val 0.8902s]]     loss: -2.33138654      
+[[step    13180]]     [[train 3.7506s]]     loss: -2.50411158      [[val 0.9007s]]     loss: -2.33275966      
+[[step    13200]]     [[train 3.7595s]]     loss: -2.50843769      [[val 0.897s]]     loss: -2.32897255      
+[[step    13220]]     [[train 3.742s]]     loss: -2.5120439       [[val 0.9058s]]     loss: -2.3284477       
+[[step    13240]]     [[train 3.77s]]     loss: -2.5113394       [[val 0.902s]]     loss: -2.32711459      
+[[step    13260]]     [[train 3.7351s]]     loss: -2.5130657       [[val 0.8947s]]     loss: -2.32763717      
+[[step    13280]]     [[train 3.7495s]]     loss: -2.51096436      [[val 0.8941s]]     loss: -2.32848556      
+restoring model from checkpoints/1564411620_iam_online/model-12260
+INFO:tensorflow:Restoring parameters from checkpoints/1564411620_iam_online/model-12260
+Restoring parameters from checkpoints/1564411620_iam_online/model-12260
+[[step    12280]]     [[train 3.7736s]]     loss: -2.50122366      [[val 0.8919s]]     loss: -2.33202275      
+[[step    12300]]     [[train 3.7954s]]     loss: -2.49771029      [[val 0.8946s]]     loss: -2.33610819      
+[[step    12320]]     [[train 3.7441s]]     loss: -2.49981539      [[val 0.884s]]     loss: -2.34251269      
+[[step    12340]]     [[train 3.7432s]]     loss: -2.50272413      [[val 0.892s]]     loss: -2.34608887      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12360]]     [[train 3.6761s]]     loss: -2.50491693      [[val 0.8769s]]     loss: -2.34928769      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12380]]     [[train 3.6072s]]     loss: -2.51533739      [[val 0.8719s]]     loss: -2.35284626      
+saving model to checkpoints/1564411620_iam_online/model
+[[step    12400]]     [[train 3.5838s]]     loss: -2.5138344       [[val 0.8617s]]     loss: -2.35277284      
+[[step    12420]]     [[train 3.5433s]]     loss: -2.51277592      [[val 0.8482s]]     loss: -2.35107444      
+[[step    12440]]     [[train 3.5239s]]     loss: -2.50953162      [[val 0.8451s]]     loss: -2.3511963       
+[[step    12460]]     [[train 3.5005s]]     loss: -2.51072733      [[val 0.8467s]]     loss: -2.35226137      
+[[step    12480]]     [[train 3.5326s]]     loss: -2.51062814      [[val 0.8527s]]     loss: -2.35138997      
+[[step    12500]]     [[train 3.4577s]]     loss: -2.51425749      [[val 0.853s]]     loss: -2.34948952      
+[[step    12520]]     [[train 3.5116s]]     loss: -2.5156547       [[val 0.867s]]     loss: -2.35148139      
+[[step    12540]]     [[train 3.5369s]]     loss: -2.51608231      [[val 0.8641s]]     loss: -2.35085734      
+[[step    12560]]     [[train 3.5498s]]     loss: -2.51380471      [[val 0.867s]]     loss: -2.34771952      
+[[step    12580]]     [[train 3.5324s]]     loss: -2.51226765      [[val 0.8639s]]     loss: -2.3511957       
+[[step    12600]]     [[train 3.5326s]]     loss: -2.5104852       [[val 0.8613s]]     loss: -2.35202161      
+[[step    12620]]     [[train 3.5578s]]     loss: -2.51010161      [[val 0.8566s]]     loss: -2.35004718      
+[[step    12640]]     [[train 3.4571s]]     loss: -2.51369065      [[val 0.8516s]]     loss: -2.35155248      
+[[step    12660]]     [[train 3.4997s]]     loss: -2.51908873      [[val 0.8584s]]     loss: -2.35034568      
+[[step    12680]]     [[train 3.5004s]]     loss: -2.51811399      [[val 0.8465s]]     loss: -2.34668471      
+[[step    12700]]     [[train 3.5639s]]     loss: -2.51896016      [[val 0.853s]]     loss: -2.34815596      
+[[step    12720]]     [[train 3.5463s]]     loss: -2.52174778      [[val 0.8544s]]     loss: -2.34710308      
+[[step    12740]]     [[train 3.537s]]     loss: -2.52064023      [[val 0.8419s]]     loss: -2.34749616      
+[[step    12760]]     [[train 3.5056s]]     loss: -2.5204207       [[val 0.8336s]]     loss: -2.34843081      
+[[step    12780]]     [[train 3.4668s]]     loss: -2.52370076      [[val 0.8404s]]     loss: -2.3486033       
+[[step    12800]]     [[train 3.4129s]]     loss: -2.52289124      [[val 0.8409s]]     loss: -2.3455242       
+[[step    12820]]     [[train 3.3778s]]     loss: -2.51997755      [[val 0.8248s]]     loss: -2.34757901      
+[[step    12840]]     [[train 3.4642s]]     loss: -2.52063138      [[val 0.8392s]]     loss: -2.34778684      
+[[step    12860]]     [[train 3.4528s]]     loss: -2.51472945      [[val 0.8301s]]     loss: -2.34694136      
+[[step    12880]]     [[train 3.4636s]]     loss: -2.5158899       [[val 0.8289s]]     loss: -2.34904707      
+[[step    12900]]     [[train 3.466s]]     loss: -2.51875794      [[val 0.8138s]]     loss: -2.35170605      
+best validation loss of -2.3528462553024294 at training step 12380
+early stopping - ending training.
+Namespace(dataset='../datasets/iam-online/graves/train/', name='1564411620_iam_online')
+train size 10165
+val size 535
+test size 10700
